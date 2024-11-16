@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #r1c1 {
+        color: brown;
+        background-color: blueviolet;
+      }
+      .r1c2 {
+        color: yellow;
+        background-color: brown;
+      }
+      #r1c3 {
+        color: orange;
+        background-color: blue;
+      }
+      #r1c4 {
+        color: red;
+        background-color: rgb(0, 255, 242);
+      }
+      .r2c1 {
+        color: green;
+        background-color: rgb(95, 8, 8);
+      }
+      #r2c2 {
+        color: white;
+        background-color: brown;
+      }
+      .r2c3 {
+        color: hotpink;
+        background-color: rgb(212, 179, 179);
+      }
+      #r2c4 {
+        color: teal;
+        background-color: rgb(240, 158, 158);
+      }
+      .r3c1 {
+        color: purple;
+        background-color: rgb(29, 14, 14);
+      }
+      #r3c2 {
+        color: silver;
+        background-color: rgb(148, 13, 13);
+      }
+      .r3c3 {
+        color: maroon;
+        background-color: rgb(15, 41, 44);
+      }
+      #r3c4 {
+        color: indigo;
+        background-color: rgb(160, 139, 139);
+      }
+      .r4c1 {
+        color: blue;
+        background-color: black;
+      }
+      #r4c2 {
+        color: gray;
+        background-color: rgb(85, 39, 39);
+      }
+      .r4c3 {
+        color: black;
+        background-color: rgb(137, 35, 233);
+      }
+      #r4c4 {
+        color: ivory;
+        background-color: rgb(177, 27, 27);
+      }
+      *{
+        color: rgb(70, 150, 38);
+      }
+      p,h2{
+        color: rgb(168, 2, 121);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 style="text-align:center;">Selectors:</h2>
+    <p>Selectors Are used For Adding Styles To the HTML Document</p>
+    <ol>
+        <li>Simple Selectors
+            <ol Type="a">
+                <li>Class(.)</li>       
+                <li>id(#)</li>
+                <li>Universal(*)</li>
+                <li>Grouping(s1,h1,...)</li>
+                <li>Tagname/Elementname</li>
+            </ol>
+        </li>
+        <li>Combinator Selectors</li>
+        <li>Atrribute Selectors</li>
+        <li>pseudo-Class</li>
+        <li>Pseudo-Element</li> 
+    </ol>
+    <h1 style="color: blue">
+      Using all Simple Selectors in HTML Via Table Format
+    </h1>
+    <table border="2">
+      <th colspan="4" style="background-color: rgba(144, 101, 213, 0.471);"> Colors In CSS</th>
+      <!-- <th></th>
+      <th></th>
+      <th></th> -->
+      <tr>
+        <td id="r1c1">Brown</td>
+        <td class="r1c2">yellow</td>
+        <td id="r1c3">orange</td>
+        <td id="r1c4">red</td>
+      </tr>
+      <tr>
+        <td class="r2c1">Green</td>
+        <td id="r2c2">white</td>
+        <td class="r2c3">Hot Pink</td>
+        <td id="r2c4">Teal</td>
+      </tr>
+      <tr>
+        <td class="r3c1">Purple</td>
+        <td id="r3c2">Silver</td>
+        <td class="r3c3">Maroon</td>
+        <td id="r3c4">Indigo</td>
+      </tr>
+      <tr>
+        <td class="r4c1">Blue</td>
+        <td id="r4c2">Gray</td>
+        <td class="r4c3">BlacK</td>
+        <td id="r4c4">Ivory</td>
+      </tr>
+    </table>
+  </body>
+</html>
