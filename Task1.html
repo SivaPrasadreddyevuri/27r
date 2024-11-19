@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 3px solid green;
+        width: 90px;
+        height: 180px;
+      }
+      #html {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .p1 {
+        display: none;
+        border: 2px solid red;
+        width: 80px;
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      div:hover + .p1 {
+        display: block;
+        background-color: rgb(235, 240, 247);
+        color: rgb(20, 23, 23);
+      }
+      .c1{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .c2{
+        display: none;
+        border: 2px solid red;
+        height: 110px;
+        border-radius: 10px;
+      }
+      #c3:hover+.c2{
+        display: block;
+        background-color: rgb(244, 136, 237);
+        color: rgb(15, 13, 13);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./images/HTML logo.jpeg" alt="HTML logo" height="80px" />
+      <h3>HTML5</h3>
+      <p id="html">
+        Hypertext Markup Language (HTML) is the standard markup language for
+        documents designed to be displayed in a web browser. It defines the
+        content and structure of web content. It is often assisted by
+        technologies such as Cascading Style Sheets (CSS) and scripting
+        languages such as JavaScript, a programming language.
+      </p>
+    </div>
+    <p class="p1">
+      Hypertext Markup Language (HTML) is the standard markup language for
+      documents designed to be displayed in a web browser. It defines the
+      content and structure of web content. It is often assisted by technologies
+      such as Cascading Style Sheets (CSS) and scripting languages such as
+      JavaScript, a programming language.
+    </p>
+
+    <div id="c3">
+      <img src="./images/CSS3_logo.jpg" alt="CSS logo" height="80px" />
+      <h3>CSS 3</h3>
+      <p class="c1">
+        Cascading Style Sheets (CSS) is a style sheet language used for
+        specifying the presentation and styling of a document written in a
+        markup language such as HTML or XML (including XML dialects such as SVG,
+        MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide
+        Web, alongside HTML and JavaScript.[2]
+      </p>
+    </div>
+    <p class="c2">
+        Cascading Style Sheets (CSS) is a style sheet language used for
+        specifying the presentation and styling of a document written in a
+        markup language such as HTML or XML (including XML dialects such as SVG,
+        MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide
+        Web, alongside HTML and JavaScript.[2]
+      </p>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text and Color features In CSS</title>
+    <style>
+     /* p{
+          /* text-align:center; */
+          /* text-align:end;
+          text-align:justify;
+          text-decoration:underline;
+          text-decoration: overline; */
+          /* text-decoration: line-through; */
+          /* text-decoration-color:red; */
+          /* text-decoration-color:#7788; */
+          /* white-space: nowrap; */
+          /* overflow: hidden; */
+          
+          /* overflow-x: scroll; */
+          /* overflow-y: scroll; */
+
+        /* div{
+            border: 2px solid red;
+            width: 150px;
+            overflow:scroll;
+            height: 150px;
+        } */
+        /* ::-webkit-scrollbar{
+            display:none;
+        } */
+         div{
+            border: 2px solid red;
+            width: 115px;
+            /* overflow:hidden; */
+           
+            
+         }
+         .p1{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+         }
+         .p2{
+            display: none;
+         }
+div:hover~.p2{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+    </style>
+  </head>
+  <body>
+     <div>
+        <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi
+            ullam dignissimos voluptatem deserunt temporibus maxime tempore pariatur
+            libero, soluta blanditiis tempora, aliquid, harum repellendus quasi
+            ratione impedit neque rerum.
+          </p>
+     </div>
+     <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi
+        ullam dignissimos voluptatem deserunt temporibus maxime tempore pariatur
+        libero, soluta blanditiis tempora, aliquid, harum repellendus quasi
+        ratione impedit neque rerum.
+      </p>
+  </body>
+</html>
