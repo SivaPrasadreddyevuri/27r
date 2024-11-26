@@ -1,0 +1,18 @@
+.md{
+    border: 2px solid;
+
+}
+.div1,.div2,.div3{
+    border: 2px solid;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content:space-evenly;
+    gap: 10px;
+}
+.div1 div{
+    border: 2px solid red;
+    height: 90px;
+    width: 80px;
+    border-radius: 10px;
+}
