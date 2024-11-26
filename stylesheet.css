@@ -1,6 +1,9 @@
 .md{
     border: 2px solid;
-
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
 }
 .div1,.div2,.div3{
     border: 2px solid;
@@ -10,9 +13,42 @@
     justify-content:space-evenly;
     gap: 10px;
 }
-.div1 div{
+.div1 img{
+    border: 2px solid red;
+    height:110px;
+    width: 120px;
+    border-radius: 10px;
+}
+.div2 img{
     border: 2px solid red;
     height: 90px;
-    width: 80px;
+    width: 110px;
     border-radius: 10px;
+}
+.div3 img{
+    border: 2px solid red;
+    height: 90px;
+    width: 120px;
+    border-radius: 10px;
+}
+img:hover{
+    height: 130px;
+    width: 140px;
+    border: 3px solid green;
+}
+@media screen and (min-width: 0px) and (max-width: 320px){
+    .md{
+        background-color:black;
+    }
+    }
+@media screen and (min-width:321px) and (max-width:768px) {
+    .md{
+        background-color: skyblue;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .md{
+        background-color: rgb(36, 1, 1);
+    }
+    
 }
