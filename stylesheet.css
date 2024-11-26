@@ -6,7 +6,7 @@
     gap: 10px;
 }
 .div1,.div2,.div3{
-    border: 2px solid;
+    border: 2px solid red;
     display:flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -18,41 +18,45 @@
     height:110px;
     width: 120px;
     border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(169, 3, 3);
 }
 .div2 img{
     border: 2px solid red;
     height: 90px;
     width: 110px;
     border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(169, 3, 3);
 }
 .div3 img{
     border: 2px solid red;
     height: 90px;
     width: 120px;
     border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(169, 3, 3);
 }
 img:hover{
     height: 130px;
     width: 140px;
     border: 3px solid green;
+    box-shadow: 10px 10px 20px rgb(32, 91, 31);
 }
 @media screen and (min-width: 0px) and (max-width: 320px){
     .md{
-        background-color:black;
+        background-image: url(./images/bc1.jpg);
     }
     }
 @media screen and (min-width:321px) and (max-width:768px) {
     .md{
-        background-color: skyblue;
+        background-image: url(./images/bc2.jpg);
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .md{
-        background-color: rgb(36, 1, 1);
+        background-image: url(./images/bc3.jpg);
     }
 }
 @media screen and (min-width:1025px) and (max-width:2560px) {
     .md{
-        background-color: black;
+        background-image: url(./images/bc4.jpg);
     } 
 }
