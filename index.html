@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            display: grid;
+            grid-template-rows: 60px 120px;
+            gap: 4px;
+            grid-template-areas: 
+            "box1 box2 box3 box4 box5 box6 "
+            "box7 box8 box8 box4 box5 box6 " ;
+            border: 2px solid;
+            padding: 5px;
+            width: 950px;
+        }
+        .md div{
+            border: 1px solid;
+            padding: 10px;
+        }
+        .d1{
+            grid-area: box1;
+        }
+        .d2{
+            grid-area: box2;
+            width: 180px;
+        }
+        .d3{
+            grid-area: box3;
+            width: 70px;
+        }
+        .d4{
+            grid-area: box4;
+            width: 10px;
+        }
+        .d5{
+            grid-area: box5;
+            width: 10px;
+        }
+        .d6{
+            grid-area: box6;
+            width: 10px;
+        }
+        .d7{
+            grid-area: box7;
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="d1">D1</div>
+        <div class="d2">D2</div>
+        <div class="d3">D3</div>
+        <div class="d4">D4</div>
+        <div class="d5">D5</div>
+        <div class="d6">D6</div>
+        <div class="d7">D7</div>
+        <div class="d8">D8</div>
+        <!-- <div class="d9">D9</div>
+        <div class="d10">D10</div>
+        <div class="d11">D11</div>
+        <div class="d12">D12</div> -->
+    </div>
+</body>
+</html>
