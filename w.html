@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu {
+        background-color: rgba(255, 0, 0, 0.741);
+        height: 100vh;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 80px;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        position: fixed;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #content {
+        margin-left: 280px;
+        padding: 120px;
+        display: flex;
+        flex-direction: column;
+      }
+      .line {
+        border: 5px solid red;
+        width: 60px;
+        border-radius: 100px;
+      }
+      .Showcase {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+      }
+      .Showcase div img {
+        width: 490px;
+        opacity: 0.4;
+      }
+      .Showcase div img:hover {
+        opacity: 1;
+      }
+      .services .line {
+        border: 5px solid red;
+        width: 60px;
+        border-radius: 100px;
+      }
+      .desingers .line {
+        border: 5px solid red;
+        width: 60px;
+        border-radius: 100px;
+      }
+      .design {
+        display: flex;
+        gap: 8px;
+      }
+      .design img {
+        width: 360px;
+      }
+      .design div {
+        background-color: rgba(128, 128, 128, 0.384);
+        width: 360px;
+      }
+      .basic{
+        border: 1px solid rgb(121, 116, 116);
+        width: 50%;
+        height: 630px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(70, 66, 66, 0.237);
+      } 
+      .pro{
+        border: 1px solid rgb(182, 170, 170);
+        width: 50%;
+        height: 630px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(79, 74, 74, 0.247);
+      }
+      .pack {
+        display: flex;
+        gap: 40px;
+      }
+      .contact .line{
+        border: 5px solid red;
+        width: 60px;
+        border-radius: 100px;
+      }
+      input{
+        width: 65vw;
+        height: 50px;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu" id="menu">
+      <h1>
+        Company<br />
+        Name
+      </h1>
+      <br /><br /><br />
+      <a href="#menu"><h2>Home</h2></a>
+      <a href="#Showcase"><h2>Showcase</h2></a>
+      <a href="#services"><h2>Services</h2></a>
+      <a href="#designers"><h2>Designers</h2></a>
+      <a href="#packages"><h2>Packages</h2></a>
+      <a href="#contact"><h2>Contact</h2></a>
+    </div>
+    <div id="content">
+      <p style="font-size: 70px">Interior Design</p>
+      <p style="font-size: 50px; color: red">ShowCase.</p>
+      <br />
+      <div class="line"></div>
+      <br /><br />
+      <div class="Showcase" id="Showcase">
+        <div>
+          <img
+            src="https://www.w3schools.com/w3images/kitchenconcrete.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/w3images/atrium.jpg" alt="" />
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="" />
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="" />
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="" />
+        </div>
+        <div>
+          <img
+            src="https://www.w3schools.com/w3images/livingroom2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="services" id="services">
+        <p style="font-size: 50px; color: red">Services.</p>
+        <br />
+        <div class="line"></div>
+        <br />
+        <p>
+          We are a interior design service that focus on what's best for your
+          home and what's best for you!
+        </p>
+        <br />
+        <p>
+          Some text about our services - what we do and what we offer. We are
+          lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.
+        </p>
+      </div>
+      <div class="desingers" id="designers">
+        <p style="font-size: 50px; color: red">Desingers.</p>
+        <br />
+        <div class="line"></div>
+        <br />
+        <p>The best team in the world.</p>
+        <br />
+        <p>
+          We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <br />
+        <p><b>Our designers are thoughtfully chosen:</b></p>
+        <br />
+      </div>
+      <div class="design" id="design">
+        <div>
+          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" />
+          <p style="font-size: 25px">John Doe</p>
+          <br />
+          <p style="color: gray; opacity: 0.8">CEO & Founder</p>
+          <br />
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" />
+          <p style="font-size: 25px">Jane Doe</p>
+          <br />
+          <p style="color: gray; opacity: 0.8">Designer</p>
+          <br />
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" />
+          <p style="font-size: 25px">Mike Ross</p>
+          <br />
+          <p style="color: gray; opacity: 0.8">Architect</p>
+          <br />
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+        </div>
+      </div>
+      <div class="packages" id="packages">
+        <p style="font-size: 50px; color: red">Packages.</p>
+        <br />
+        <div class="line"></div>
+        <br />
+        <p>
+          Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure
+        </p>
+        <br/>
+    </div>
+        <div class="pack">
+            <div class="basic" style="text-align: center;">
+            <p style="background-color: rgb(111, 102, 102);padding: 20px; font-size: 40px; margin-top: -24px;" >Basic</p>
+            <p>Floorplanning</p><hr>
+            <p>10 hours support</p><hr>
+            <p>Photography</p><hr>
+            <p>20% furniture discount</p><hr>
+            <p>Good deals</p><hr>
+            <p>$ 199<br>
+                per room</p><hr>
+            <p style="border: 1px solid; height: 40px; width: 90px; padding: 8px; margin-left:205px ; border-radius: 3px;">Sign Up</p>
+        </div>
+        <div class="pro"  style="text-align: center;">
+            <p style="background-color: rgb(247, 8, 8);padding: 20px; font-size: 40px; margin-top: -24px;" >Pro</p>
+            <p>Floorplanning</p><hr>
+            <p>50 hours support</p><hr>
+            <p>Photography</p><hr>
+            <p>50 % furniture discount</p><hr>
+            <p>GREAT deals</p><hr>
+            <p>$ 249<br>
+                per room
+              </p><hr>
+            <p style="border: 1px solid; height: 40px; width: 90px; padding: 8px; margin-left:205px ; border-radius: 3px;background-color: red;">Sign Up</p>
+        </div>
+    </div><br><br>
+    <div class="contact" id="contact">
+      <p style="font-size: 60px; color: red;">Contact.</p><br>
+      <div class="line"></div><br>
+      <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p><br>
+      <form>
+        <p>Name</p>
+        <input type="text"><br><br>
+        <p>Email</p>
+        <input type="text"><br><br>
+        <p>Message</p>
+        <input type="text"><br><br>
+        <input type="submit" value="Send Message" style="background-color: red; font-size: 19px; border: none;"><br><br>
+      </form>
+    </div>
+    <div style="background-color: rgba(128, 128, 128, 0.285); padding: 50px; text-align: end;">Devloped by <a href="https://github.com/SivaPrasadreddyevuri/27r.git"> Siva develop</a></div>
+    </div>
+  </body>
+</html>
