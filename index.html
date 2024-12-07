@@ -1,36 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        input:focus{
-            color: red;
-            background-color: aquamarine;
+      /* h1:hover{
+            color: rgb(225, 133, 14);
         }
-        ::-webkit-scrollbar:{
-            display: none;
+        h1:active{
+            color: green;
         }
-        a{
-            text-decoration-line: none;
+        a:link{
+          color: brown;
         }
         a:visited{
-            background-color: rgb(18, 231, 231);
+            color: green;
+        } */
+      /* input:focus{
+            color: aqua;
+            background-color: blueviolet;
         }
         :target{
-            color: rgb(17, 213, 158);
-        }
+          background-color: orange;
+          border: 5px solid;
+        } */
+      /* :root{
+            --bgcolor:red;
+         }
+         h1{
+            color: var(--bgcolor);
+         }
+         h2{
+            color:var(--bgcolor)
+         } */
+      li {
+        /* list-style: none; */
+      }
+      /* li:first-child{
+            color: red;
+          }
+          li:last-child{
+            color: aqua;
+          }
+          li:nth-child(2n){
+            color: green;
+          }
+          div:first-of-type{
+            color: rgb(133, 92, 92);
+          }
+          div:last-of-type{
+            color: blue;
+          } */
+      /* div h1:nth-of-type(2n-1){
+            background-color: aqua;
+          } */
+      /* p::first-letter{
+            color: aqua;
+            font-size: 30px;
+            border: 1px solid rgb(251, 14, 10);
+           } */
+      /* p::first-line{
+                color: red;
+            } */
+      /* p::selection{
+                color: red;
+                background-color: aqua;
+            } */
+      /* P::before{
+                content: "hello";
+             }
+             p::after{
+                content: "bye";
+             }
+             li::marker{
+                color: rgb(0, 255, 208);
+                content: "--->";
+             } */
+      /* input::placeholder{
+                color: brown;
+                font-size: 20px;
+                opacity: 0.3;
+              } */
+    div{
+       margin-left: 20px;
+       display: flex;
+       padding: 10px;
+        
+    }
+    div:hover{
+        /* transform: scale(3,3); */
+        /* transform: rotate(250deg); */
+        /* transform: translate(20px,50px); */
+        /* transform: skew(20deg ,30deg); */
+        /* transform: scale(2,5); */
+    }
+    .prv{
+        border: green solid;
+        width: 90px;
+        color: white;
+        background-color:green;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .nxt{
+        border: green solid;
+        width: 90px;
+        color: white;
+        background-color:green;
+        padding: 10px;
+        border-radius: 5px;
+        text-align:center;
+            /* margin-left: 1300px;
+            margin-top: -68px; */
+    }
+
     </style>
-</head>
-<body>
-    <div>
-        <form>
-            <label for="f1">name</label>
-            <input type="text" id="f1" placeholder="name" required>
-            <input type="submit" value="register" id="">
-        </form>
-        <a href="./README.md" target="_blank ">abcbdb</a>
+  </head>
+  <body>
+    <!-- <h1>hello</h1>
+  <h2>hi</h2>  
+  <a href="#name">noes</a> -->
+    <!-- <input type="text" id="name" placeholder="text here"> -->
+    <!-- <ol>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+  </ol>
+  <ul>
+  <li>first</li>
+  <li>second</li>
+  <li>third</li>
+  <li>fourth</li>
+</ul> -->
+    <!-- <div>
+    <h1>Siva</h1>
+<h1>Siva</h1>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam eaque assumenda, molestiae, ratione deleniti a, necessitatibus voluptas et adipisci numquam ipsa reiciendis temporibus magni repudiandae hic nemo at nesciunt?</P>
+</div> -->
+
+    <div class="md">
+        <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: xx-large;">CSS transform</p>
+       <div class="prv"> < Previous</div>
+       <Select style="width: 220px; padding: 10px; border-radius: 10px; ">
+        <option value=""> </option>
+        <option value="">Transform</option>
+       </Select>
+       <div class="nxt">Next ></div>  
     </div>
-</body>
+  </body>
 </html>
