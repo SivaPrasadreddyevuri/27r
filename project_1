@@ -18,7 +18,7 @@
       flex-wrap: wrap;
     }
     .home {
-      background-image: url(./27r/images/banner-bg.jpg);
+      background-image: url(./images/banner-bg.jpg);
       color: white;
       height: 450px;
       display: flex;
@@ -65,7 +65,7 @@
         text-align: center;
     }
     .book{
-        background-image: url(./27r/images/book-bg.jpg);
+        background-image: url(./images/book-bg.jpg);
         height: 390px;
         display: flex;
         flex-wrap: wrap;
@@ -114,8 +114,8 @@
       <p style="background-color: rgba(255, 68, 0, 0.91); width: 160px; margin: auto; border-radius: 10px;padding:10px;">ORDER RIGHT NOW</p>
     </div>
     <div class="cook">
-        <div><img src="./27r/images/cook_01.jpg" alt=""></div>
-        <div><img src="./27r/images/cook_02.jpg" alt=""></div>
+        <div><img src="./images/cook_01.jpg" alt=""></div>
+        <div><img src="./images/cook_02.jpg" alt=""></div>
         <div class="c1">
             <p>WE COOK DELECIOUS</p>
             <p style="background-color:rgba(64, 50, 50, 0.221); padding: 10px;">YOU CAN CALL US ON:<br><br>+1234 567 8910</p>
@@ -125,14 +125,14 @@
 
     </div>
     <div class="catg">
-       <div><img src="./27r/images/cook_breakfast.png" alt=""><p>Breakfast</p></div>
-       <div><img src="./27r/images/cook_lunch.png" alt=""><p>Lunch</p></div>
-       <div><img src="./27r/images/cook_dinner.png" alt=""><p>Dinner</p></div>
-       <div><img src="./27r/images/cook_dessert.png" alt=""><p>Dessert</p></div>
+       <div><img src="./images/cook_breakfast.png" alt=""><p>Breakfast</p></div>
+       <div><img src="./images/cook_lunch.png" alt=""><p>Lunch</p></div>
+       <div><img src="./images/cook_dinner.png" alt=""><p>Dinner</p></div>
+       <div><img src="./images/cook_dessert.png" alt=""><p>Dessert</p></div>
     </div>
     <div class="book">
         <p style="color: white;padding: 40px; position: absolute; margin-top:-90px;">BOOK YOUR TABLE NOW</p>
-        <div><img src="./27r/images/book_left_image.jpg" alt="" width="280px" height="227.5px"></div>
+        <div><img src="./images/book_left_image.jpg" alt="" width="280px" height="227.5px"></div>
         <div class="form">
             <p style="text-align: center;">Reservation</p>
            <input type="date">
