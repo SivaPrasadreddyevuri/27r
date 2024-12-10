@@ -16,6 +16,7 @@
       gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
+     
     }
     .home {
       background-image: url(./images/banner-bg.jpg);
@@ -24,128 +25,414 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      flex-direction:column;
+      flex-direction: column;
     }
-    .home p{
-        text-align: center;
+    .home p {
+      text-align: center;
     }
-    .cook{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 280px;
-        justify-content: center;
-        padding: 80px;
+    .cook {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 280px;
+      justify-content: center;
+      padding: 80px;
     }
-    .cook img{
-        width: 275px;
-        position: relative;
+    .cook img {
+      width: 275px;
+      position: relative;
     }
-    .c1{
-        position: absolute;
-        border:solid,rgb(240, 91, 36);
-        color: white;
-        background-color: rgb(245, 92, 36);
-        text-align: center;
-        width: 260px;
-        height: 250px;
-        padding: 10px;
-        margin-top: -30px;
-        /* display: flex;
+    .c1 {
+      position: absolute;
+      border: solid, rgb(240, 91, 36);
+      color: white;
+      background-color: rgb(245, 92, 36);
+      text-align: center;
+      width: 260px;
+      height: 250px;
+      padding: 10px;
+      margin-top: -30px;
+      /* display: flex;
         flex-direction: column;
         flex-wrap: wrap; */
     }
-    .catg{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 160px;
-        justify-content: center;
-        padding: 60px;
+    .catg {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 160px;
+      justify-content: center;
+      padding: 60px;
     }
-    .catg p{
-        text-align: center;
+    .catg p {
+      text-align: center;
     }
-    .book{
-        background-image: url(./images/book-bg.jpg);
-        height: 390px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 80px;
-        position: relative;
+    .book {
+      background-image: url(./images/book-bg.jpg);
+      height: 390px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 80px;
+      position: relative;
     }
-    .form{
-        background-color: white;
-        width: 300px;
-        height: 219px;
-       text-align: center;
-       padding: 4px;
+    .form {
+      background-color: white;
+      width: 300px;
+      height: 219px;
+      text-align: center;
+      padding: 4px;
     }
-    .form input{
-       width: 130px;
+    .form input {
+      width: 130px;
     }
-    .app{
-        background-color: rgb(248, 112, 63);
-        height: 100px;
-        margin-top: -16px;
-    padding: 40px;
+    .app {
+      background-color: rgb(248, 112, 63);
+      height: 100px;
+      margin-top: -16px;
+      padding: 40px;
     }
-    .app p{
-        text-align: center;
+    .app p {
+      text-align: center;
+    }
+    .wf {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 90px;
+      position: relative;
+    }
+    .bf,
+    .ln,
+    .dn {
+      background-color: whitesmoke;
+      padding: 5px;
+    }
+    .bf ~ img {
+      position: relative;
+    }
+    h3 {
+      position: absolute;
+      margin-top: -60px;
+    }
+    h4 {
+      position: absolute;
+      margin-left: 261px;
+      margin-top: 153px;
+      background-color: rgb(199, 187, 187);
+      color: rgb(226, 81, 29);
+      padding: 4.5px;
+    }
+    .blog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 150px;
+      background-color: rgba(251, 235, 235, 0.618);
+      position: relative;
+      height: 274px;
+    }
+    .blog .p1 {
+      position: absolute;
+      margin-top: -80px;
+      font-size: 25px;
+    }
+    .b1,
+    .b2,
+    .b3,
+    .b4 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .blog img {
+      width: 250px;
+      height: 190px;
+      position: relative;
+    }
+    .blog .p2{
+      position: absolute;
+      margin-top: 0px;
+      color: rgb(226, 58, 7);
+      background-color: rgba(233, 241, 241, 0.859);
+      padding: 10px;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }a{
+      text-decoration: none;
+    }
+    .c1:hover{
+      width: 282px;
+      height: 262px;
+      background-color: orangered;
     }
   </style>
   <body>
     <h1 style="text-align: center; font-size: xxx-large">Victory</h1>
     <hr />
     <nav class="md">
-      <p>HOME</p>
-      <p>OUR MENUS</p>
-      <p>BLOG ENTRIES</p>
+     <a href="#h1"> <p>HOME</p></a>
+      <a href="#menu"><p>OUR MENUS</p></a>
+      <a href="#entries"><p>BLOG ENTRIES</p></a>
       <p>CONTACT US</p>
     </nav>
-    <div class="home">
+    <div class="home" id="h1">
       <p>HERE YOU CAN FIND DELECIOUS FOOD</p>
-      <p style="font-size: 30px;">ASIAN RESTAURANT</p>
+      <p style="font-size: 30px">ASIAN RESTAURANT</p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
         voluptatem inventore quia accusantium modi deserunt, sint suscipit nihil
         accusamus ea quos eligendi qui pariatur? Nulla qui ipsam deleniti ipsum
         cumque.
       </p>
-      <p style="background-color: rgba(255, 68, 0, 0.91); width: 160px; margin: auto; border-radius: 10px;padding:10px;">ORDER RIGHT NOW</p>
+      <p
+        style="
+          background-color: rgba(255, 68, 0, 0.91);
+          width: 160px;
+          margin: auto;
+          border-radius: 10px;
+          padding: 10px;
+        "
+      >
+        ORDER RIGHT NOW
+      </p>
     </div>
     <div class="cook">
-        <div><img src="./images/cook_01.jpg" alt=""></div>
-        <div><img src="./images/cook_02.jpg" alt=""></div>
-        <div class="c1">
-            <p>WE COOK DELECIOUS</p>
-            <p style="background-color:rgba(64, 50, 50, 0.221); padding: 10px;">YOU CAN CALL US ON:<br><br>+1234 567 8910</p>
-            <p style="background-color:rgb(233, 175, 175); width:30px; margin: auto; border-radius: 100px; padding: 1px;">OR</p><br><br>
-            <p style="background-color:white; color: orangered; width: 110px; margin: auto;padding:10px; border-radius: 10px;">ORDER NOW</p>
-        </div>
-
+      <div><img src="./images/cook_01.jpg" alt="" /></div>
+      <div><img src="./images/cook_02.jpg" alt="" /></div>
+      <div class="c1">
+        <p>WE COOK DELECIOUS</p>
+        <p style="background-color: rgba(64, 50, 50, 0.221); padding: 10px">
+          YOU CAN CALL US ON:<br /><br />+1234 567 8910
+        </p>
+        <p
+          style="
+            background-color: rgb(233, 175, 175);
+            width: 30px;
+            margin: auto;
+            border-radius: 100px;
+            padding: 1px;
+          "
+        >
+          OR
+        </p>
+        <br /><br />
+        <p
+          style="
+            background-color: white;
+            color: orangered;
+            width: 110px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+          "
+        >
+          ORDER NOW
+        </p>
+      </div>
     </div>
-    <div class="catg">
-       <div><img src="./images/cook_breakfast.png" alt=""><p>Breakfast</p></div>
-       <div><img src="./images/cook_lunch.png" alt=""><p>Lunch</p></div>
-       <div><img src="./images/cook_dinner.png" alt=""><p>Dinner</p></div>
-       <div><img src="./images/cook_dessert.png" alt=""><p>Dessert</p></div>
+    <div class="catg" id="menu">
+      <div>
+        <img src="./images/cook_breakfast.png" alt="" />
+        <p>Breakfast</p>
+      </div>
+      <div>
+        <img src="./images/cook_lunch.png" alt="" />
+        <p>Lunch</p>
+      </div>
+      <div>
+        <img src="./images/cook_dinner.png" alt="" />
+        <p>Dinner</p>
+      </div>
+      <div>
+        <img src="./images/cook_dessert.png" alt="" />
+        <p>Dessert</p>
+      </div>
     </div>
     <div class="book">
-        <p style="color: white;padding: 40px; position: absolute; margin-top:-90px;">BOOK YOUR TABLE NOW</p>
-        <div><img src="./images/book_left_image.jpg" alt="" width="280px" height="227.5px"></div>
-        <div class="form">
-            <p style="text-align: center;">Reservation</p>
-           <input type="date">
-           <input type="time"><br><br>
-           <input type="text" placeholder="Fullname">
-           <input type="mblno" placeholder="Phone number"><br><br>
-           <input type="text" placeholder="How many peersons">
-           <button style="background-color: rgb(243, 96, 43); padding: 5px; color: white;border-radius: 3px;">BOOK TABLE</button>
-        </div>
+      <p
+        style="
+          color: white;
+          padding: 40px;
+          position: absolute;
+          margin-top: -90px;
+        "
+      >
+        BOOK YOUR TABLE NOW
+      </p>
+      <div>
+        <img
+          src="./images/book_left_image.jpg"
+          alt=""
+          width="280px"
+          height="227.5px"
+        />
+      </div>
+      <div class="form">
+        <p style="text-align: center">Reservation</p>
+        <input type="date" />
+        <input type="time" /><br /><br />
+        <input type="text" placeholder="Fullname" />
+        <input type="mblno" placeholder="Phone number" /><br /><br />
+        <input type="text" placeholder="How many peersons" />
+        <button
+          style="
+            background-color: rgb(243, 96, 43);
+            padding: 5px;
+            color: white;
+            border-radius: 3px;
+          "
+        >
+          BOOK TABLE
+        </button>
+      </div>
     </div>
     <div class="app">
       <p>GET APPLICATION FOR YOUR PHONE</p>
-      <p style="background-color: white; color: rgb(238, 111, 65); width: 138px; margin: auto;padding: 9px;border-radius: 2px;">DOWNLOAD NOW</p>
+      <p
+        style="
+          background-color: white;
+          color: rgb(238, 111, 65);
+          width: 138px;
+          margin: auto;
+          padding: 9px;
+          border-radius: 2px;
+        "
+      >
+        DOWNLOAD NOW
+      </p>
+    </div>
+    <div class="wf">
+      <h3>WEEKLY FEATURED FOOD</h3>
+      <div class="bf">
+        <p>Breakfast</p>
+        <hr />
+        <h4>$4.50</h4>
+        <img src="./images/breakfast_item.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />? adipisicing elit.
+          Voluptatem quidem,<br />
+          hic totam, eveniet reprehenderit<br />
+          harum possimus culpa sed excepturi <br />repellendus, omnis molestiae!
+          Quia delectus <br />porro natus itaque iusto at dolorem.
+        </p>
+      </div>
+      <div class="ln">
+        <p>Lunch</p>
+        <hr />
+        <h4>$7.50</h4>
+        <img src="./images/lunch_item.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />? adipisicing elit.
+          Voluptatem quidem,<br />
+          hic totam, eveniet reprehenderit<br />
+          harum possimus culpa sed excepturi <br />repellendus, omnis molestiae!
+          Quia delectus <br />porro natus itaque iusto at dolorem.
+        </p>
+      </div>
+      <div class="dn">
+        <p>Dinner</p>
+        <hr />
+        <h4 style="margin-left: 252px">$12.50</h4>
+        <img src="./images/dinner_item.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />? adipisicing elit.
+          Voluptatem quidem,<br />
+          hic totam, eveniet reprehenderit<br />
+          harum possimus culpa sed excepturi <br />repellendus, omnis molestiae!
+          Quia delectus <br />porro natus itaque iusto at dolorem.
+        </p>
+      </div>
+    </div>
+    <div class="blog" id="entries">
+      <p class="p1"><strong>OUR BLOG POST</strong></p>
+      <div class="b1">
+        <img src="./images/blog_post_01.jpg" alt="" />
+        <p class="p2">26 OCT 2017</p>
+        <p
+          style="
+            background-color: white;
+            width: 250px;
+            height: 170px;
+            margin-top: 0px;
+            padding: 10px;
+            overflow: hidden;
+            overflow-y: scroll;
+          "
+        >
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam.
+        </p>
+      </div>
+      <div class="b2">
+        <img src="./images/blog_post_02.jpg" alt="" />
+        <p class="p2">21 OCT 2017</p>
+        <p
+          style="
+            background-color: white;
+            width: 250px;
+            height: 170px;
+            margin-top: -0.5px;
+            padding: 10px;
+            overflow: hidden;
+            overflow-y: scroll;
+          "
+        >
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam. Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
+      <div class="b3">
+        <img src="./images/blog_post_03.jpg" alt="" />
+        <p class="p2">11 OCT 2017</p>
+        <p
+          style="
+            background-color: white;
+            width: 250px;
+            height: 170px;
+            margin-top: -0.5px;
+            padding: 10px;
+            overflow: hidden;
+            overflow-y: scroll;
+          "
+        >
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam. Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
+      <div class="b4">
+        <img src="./images/blog_post_04.jpg" alt="" />
+        <p class="p2">03 OCT 2017</p>
+        <p
+          style="
+            background-color: white;
+            width: 250px;
+            height: 170px;
+            margin-top: -0.5px;
+            padding: 10px;
+            overflow: hidden;
+            overflow-y: scroll;
+          "
+        >
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam. Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
     </div>
   </body>
 </html>
