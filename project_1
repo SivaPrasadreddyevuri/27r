@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project for HTML CSS</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .md {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .home {
+      background-image: url(./27r/images/banner-bg.jpg);
+      color: white;
+      height: 450px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction:column;
+    }
+    .home p{
+        text-align: center;
+    }
+    .cook{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: center;
+        padding: 80px;
+    }
+    .cook img{
+        width: 275px;
+        position: relative;
+    }
+    .c1{
+        position: absolute;
+        border:solid,rgb(240, 91, 36);
+        color: white;
+        background-color: rgb(245, 92, 36);
+        text-align: center;
+        width: 260px;
+        height: 250px;
+        padding: 10px;
+        margin-top: -30px;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+    }
+    .catg{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 160px;
+        justify-content: center;
+        padding: 60px;
+    }
+    .catg p{
+        text-align: center;
+    }
+    .book{
+        background-image: url(./27r/images/book-bg.jpg);
+        height: 390px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 80px;
+        position: relative;
+    }
+    .form{
+        background-color: white;
+        width: 300px;
+        height: 219px;
+       text-align: center;
+       padding: 4px;
+    }
+    .form input{
+       width: 130px;
+    }
+    .app{
+        background-color: rgb(248, 112, 63);
+        height: 100px;
+        margin-top: -16px;
+    padding: 40px;
+    }
+    .app p{
+        text-align: center;
+    }
+  </style>
+  <body>
+    <h1 style="text-align: center; font-size: xxx-large">Victory</h1>
+    <hr />
+    <nav class="md">
+      <p>HOME</p>
+      <p>OUR MENUS</p>
+      <p>BLOG ENTRIES</p>
+      <p>CONTACT US</p>
+    </nav>
+    <div class="home">
+      <p>HERE YOU CAN FIND DELECIOUS FOOD</p>
+      <p style="font-size: 30px;">ASIAN RESTAURANT</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        voluptatem inventore quia accusantium modi deserunt, sint suscipit nihil
+        accusamus ea quos eligendi qui pariatur? Nulla qui ipsam deleniti ipsum
+        cumque.
+      </p>
+      <p style="background-color: rgba(255, 68, 0, 0.91); width: 160px; margin: auto; border-radius: 10px;padding:10px;">ORDER RIGHT NOW</p>
+    </div>
+    <div class="cook">
+        <div><img src="./27r/images/cook_01.jpg" alt=""></div>
+        <div><img src="./27r/images/cook_02.jpg" alt=""></div>
+        <div class="c1">
+            <p>WE COOK DELECIOUS</p>
+            <p style="background-color:rgba(64, 50, 50, 0.221); padding: 10px;">YOU CAN CALL US ON:<br><br>+1234 567 8910</p>
+            <p style="background-color:rgb(233, 175, 175); width:30px; margin: auto; border-radius: 100px; padding: 1px;">OR</p><br><br>
+            <p style="background-color:white; color: orangered; width: 110px; margin: auto;padding:10px; border-radius: 10px;">ORDER NOW</p>
+        </div>
+
+    </div>
+    <div class="catg">
+       <div><img src="./27r/images/cook_breakfast.png" alt=""><p>Breakfast</p></div>
+       <div><img src="./27r/images/cook_lunch.png" alt=""><p>Lunch</p></div>
+       <div><img src="./27r/images/cook_dinner.png" alt=""><p>Dinner</p></div>
+       <div><img src="./27r/images/cook_dessert.png" alt=""><p>Dessert</p></div>
+    </div>
+    <div class="book">
+        <p style="color: white;padding: 40px; position: absolute; margin-top:-90px;">BOOK YOUR TABLE NOW</p>
+        <div><img src="./27r/images/book_left_image.jpg" alt="" width="280px" height="227.5px"></div>
+        <div class="form">
+            <p style="text-align: center;">Reservation</p>
+           <input type="date">
+           <input type="time"><br><br>
+           <input type="text" placeholder="Fullname">
+           <input type="mblno" placeholder="Phone number"><br><br>
+           <input type="text" placeholder="How many peersons">
+           <button style="background-color: rgb(243, 96, 43); padding: 5px; color: white;border-radius: 3px;">BOOK TABLE</button>
+        </div>
+    </div>
+    <div class="app">
+      <p>GET APPLICATION FOR YOUR PHONE</p>
+      <p style="background-color: white; color: rgb(238, 111, 65); width: 138px; margin: auto;padding: 9px;border-radius: 2px;">DOWNLOAD NOW</p>
+    </div>
+  </body>
+</html>
