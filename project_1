@@ -55,6 +55,23 @@
         flex-direction: column;
         flex-wrap: wrap; */
     }
+    .c1:hover{
+      width: 282px;
+      height: 262px;
+      background-color: orangered;
+    }
+    .ck1:hover{
+      transform: translate(-50px);
+      border: 1px solid;
+      height:206.5px;
+      box-shadow: 10px 10px 10px green;
+    }
+    .ck2:hover{
+      transform: translate(40px);
+      border: 1px solid;
+      height:206.5px;
+      box-shadow: 10px 10px 10px green;
+    }
     .catg {
       display: flex;
       flex-wrap: wrap;
@@ -64,6 +81,18 @@
     }
     .catg p {
       text-align: center;
+    }
+    .cat1:hover{
+      transform: scale(1.5,1.5);
+    }
+    .cat2:hover{
+      transform: scale(1.5,1.5);
+    }
+    .cat3:hover{
+      transform: scale(1.5,1.5);
+    }
+    .cat4:hover{
+      transform: scale(1.5,1.5);
     }
     .book {
       background-image: url(./images/book-bg.jpg);
@@ -122,6 +151,27 @@
       color: rgb(226, 81, 29);
       padding: 4.5px;
     }
+    .bf:hover{
+     transform: scale(1.2,1.2);
+     border: 1px solid green;
+     border-radius: 35px;
+     box-shadow: 5px 5px 25px green;
+     border: none;
+    }
+    .ln:hover{
+     transform: scale(1.2,1.2);
+     border: 1px solid green;
+     border-radius: 35px;
+     box-shadow: 5px 5px 25px green;
+     border: none;
+    }
+    .dn:hover{
+     transform: scale(1.2,1.2);
+     border: 1px solid green;
+     border-radius: 35px;
+     box-shadow: 5px 5px 25px green;
+     border: none;
+    }
     .blog {
       display: flex;
       flex-wrap: wrap;
@@ -161,11 +211,7 @@
     }a{
       text-decoration: none;
     }
-    .c1:hover{
-      width: 282px;
-      height: 262px;
-      background-color: orangered;
-    }
+    
   </style>
   <body>
     <h1 style="text-align: center; font-size: xxx-large">Victory</h1>
@@ -198,8 +244,8 @@
       </p>
     </div>
     <div class="cook">
-      <div><img src="./images/cook_01.jpg" alt="" /></div>
-      <div><img src="./images/cook_02.jpg" alt="" /></div>
+      <div class="ck1"><img src="./images/cook_01.jpg" alt="" /></div>
+      <div class="ck2"><img src="./images/cook_02.jpg" alt="" /></div>
       <div class="c1">
         <p>WE COOK DELECIOUS</p>
         <p style="background-color: rgba(64, 50, 50, 0.221); padding: 10px">
@@ -232,19 +278,19 @@
       </div>
     </div>
     <div class="catg" id="menu">
-      <div>
+      <div class="cat1">
         <img src="./images/cook_breakfast.png" alt="" />
         <p>Breakfast</p>
       </div>
-      <div>
+      <div class="cat2">
         <img src="./images/cook_lunch.png" alt="" />
         <p>Lunch</p>
       </div>
-      <div>
+      <div class="cat3">
         <img src="./images/cook_dinner.png" alt="" />
         <p>Dinner</p>
       </div>
-      <div>
+      <div class="cat4">
         <img src="./images/cook_dessert.png" alt="" />
         <p>Dessert</p>
       </div>
