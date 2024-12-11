@@ -238,7 +238,7 @@
       <a href="#h1"> <p>HOME</p></a>
       <a href="#menu"><p>OUR MENUS</p></a>
       <a href="#entries"><p>BLOG ENTRIES</p></a>
-      <p>CONTACT US</p>
+      <a href="#end1"><p>CONTACT US</p></a>
     </nav>
     <div class="home" id="h1">
       <p>HERE YOU CAN FIND DELECIOUS FOOD</p>
@@ -503,7 +503,7 @@
       <input type="email" required style="width: 250px" />
       <button style="width: 140px">SEND MESSAGE</button>
     </div>
-    <div class="end">
+    <div class="end" id="end1">
       <div>copyright@2017 Victory Template</div>
       <div>
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -538,7 +538,7 @@
           </g>
         </svg>
         <svg
-          fill="#fdfcfc"
+          fill="#000000"
           width="24px"
           height="24px"
           viewBox="0 0 24.00 24.00"
