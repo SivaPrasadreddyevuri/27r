@@ -178,8 +178,8 @@
       gap: 20px;
       padding: 80px;
       background-color: rgba(251, 235, 235, 0.618);
-      position: relative;
-      height: 320px;
+      /* position: relative; */
+      /* height: 320px; */
     }
     .blog .p1 {
       position: absolute;
@@ -194,8 +194,8 @@
       flex-wrap: wrap;
     }
     .blog img {
-      width: 250px;
-      height: 170px;
+      width: 300px;
+      height: 210px;
       position: relative;
     }
     .blog .p2 {
@@ -215,10 +215,6 @@
       background-image: url(./images/signup-bg.jpg);
       height: 80px;
       color: white;
-      /* display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center; */
       text-align: center;
       padding: 60px;
     }
@@ -408,7 +404,7 @@
         </p>
       </div>
     </div>
-    <!-- <div class="blog" id="entries">
+    <div class="blog" id="entries">
       <p class="p1"><strong>OUR BLOG POST</strong></p>
       <div class="b1">
         <img src="./images/blog_post_01.jpg" alt="" />
@@ -416,15 +412,11 @@
         <p
           style="
             background-color: white;
-            width: 200px;
-            height: 150px;
+            width: 300px;
+            height: 192px;
             margin-top: 0px;
             padding: 10px;
-            overflow: hidden;
-            overflow-y: scroll;
-          "
-        >
-          <strong>Stumptown Tofu Schlitz</strong
+          "><strong>Stumptown Tofu Schlitz</strong
           ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
           consectetur adipisicing elit. Vero quia eos reiciendis minus quam
           libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
@@ -437,12 +429,10 @@
         <p
           style="
             background-color: white;
-            width: 200px;
-            height: 150px;
+            width: 300px;
+            height: 192px;
             margin-top: -0.5px;
             padding: 10px;
-            overflow: hidden;
-            overflow-y: scroll;
           "
         >
           <strong>Stumptown Tofu Schlitz</strong
@@ -459,12 +449,10 @@
         <p
           style="
             background-color: white;
-            width: 200px;
-            height: 150px;
+            width: 300px;
+            height: 192px;
             margin-top: -0.5px;
             padding: 10px;
-            overflow: hidden;
-            overflow-y: scroll;
           "
         >
           <strong>Stumptown Tofu Schlitz</strong
@@ -481,12 +469,10 @@
         <p
           style="
             background-color: white;
-            width: 200px;
-            height: 150px;
+            width: 300px;
+            height: 192px;
             margin-top: -0.5px;
             padding: 10px;
-            overflow: hidden;
-            overflow-y: scroll;
           "
         >
           <strong>Stumptown Tofu Schlitz</strong
@@ -497,11 +483,11 @@
           Suscipit?
         </p>
       </div>
-    </div> -->
+    </div>
     <div id="footer">
       <p>SIGNUP FOR OUR NEWSLETTERS</p>
-      <input type="email" required style="width: 250px" />
-      <button style="width: 140px">SEND MESSAGE</button>
+      <input type="email" required style="border-radius:1px ; width: 180px"  placeholder="Enter your email"/>
+      <button style="width: 125px">SEND MESSAGE</button>
     </div>
     <div class="end" id="end1">
       <div>copyright@2017 Victory Template</div>
