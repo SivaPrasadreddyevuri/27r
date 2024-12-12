@@ -25,6 +25,8 @@
       flex-wrap: wrap;
       justify-content: center;
       flex-direction: column;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .home p {
       text-align: center;
@@ -99,8 +101,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 80px;
+      padding: 73px;
       position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .form {
       background-color: white;
@@ -216,7 +220,7 @@
       height: 80px;
       color: white;
       text-align: center;
-      padding: 60px;
+      padding: 63px;
     }
     .end {
       background-color: grey;
@@ -224,12 +228,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      padding-top: 50px;
+      padding: 30px;
     }
   </style>
   <body>
     <h1 style="text-align: center; font-size: xxx-large">Victory</h1>
-    <hr />
+    <hr style="width: 80vw; opacity: 0.3;"/>
     <nav class="md">
       <a href="#h1"> <p>HOME</p></a>
       <a href="#menu"><p>OUR MENUS</p></a>
@@ -238,7 +242,7 @@
     </nav>
     <div class="home" id="h1">
       <p>HERE YOU CAN FIND DELECIOUS FOOD</p>
-      <p style="font-size: 30px">ASIAN RESTAURANT</p>
+      <p style=" font-size: 36px">ASIAN RESTAURANT</p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
         voluptatem inventore quia accusantium modi deserunt, sint suscipit nihil
@@ -485,12 +489,12 @@
       </div>
     </div>
     <div id="footer">
-      <p>SIGNUP FOR OUR NEWSLETTERS</p>
-      <input type="email" required style="border-radius:1px ; width: 180px"  placeholder="Enter your email"/>
-      <button style="width: 125px">SEND MESSAGE</button>
+      <p>SIGNUP FOR OUR NEWSLETTERS</p><br>
+      <input type="email" required style="border-radius:1px ; width: 200px; height:25px ;" placeholder="Enter your email"/>
+      <button style="width: 125px; height: 25px;">SEND MESSAGE</button>
     </div>
     <div class="end" id="end1">
-      <div>copyright@2017 Victory Template</div>
+      <div>copyright@2024 Victory Template</div>
       <div>
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
@@ -590,7 +594,7 @@
           </g>
         </svg>
       </div>
-      <div>Desinedby Shiva</div>
+      <div>Desined by Shiva</div>
     </div>
   </body>
 </html>
