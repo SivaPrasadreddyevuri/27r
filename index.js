@@ -8,8 +8,31 @@ let students=[
 ];
 
 for(let i in students){
-    console.log(students[i].s_name,students[i].city)
+    console.log(students[i].s_name,"from",students[i].city)
 }
 for(let i of students){
-    console.log(i.s_name,i.city)
+    console.log(i.s_name,"from",i.city)
 }
+
+// for(i=1;i<=10;i++){
+//     console.log(`5x${i}=${i*5}`)
+// }
+// for(i=20;i>=1;i--){
+//     console.log(`15x${i}=${15*i}`)
+// }
+// let str="welcome"
+// // using for loop print each character line by line.
+// // for(i=0; i<str.length;i++){
+// //     console.log(str[i])
+// // }
+// let op=""
+// for(i=str.length-1;i>=0;i--){
+//   op=op+str[i];
+// }
+// console.log(op)
+//  let o=""
+//  for(i=1;i<=8;i++){
+//     o+="*"
+//     console.log(o) 
+//  }
+// console.log(o)
