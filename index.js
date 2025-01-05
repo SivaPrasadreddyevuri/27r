@@ -10,13 +10,37 @@ let students=[
 
 
 //for-in
-// for(let i in students)
-// {
-//     // console.log(students[i].s_name,"from",students[i].city);
-//     // console.log(i);
-// }
+for(let i in students)
+{
+    console.log(students[i].s_name,"from",students[i].city);
+    // console.log(i);
+}
 
 //for-of
  for(let i of students){
     console.log(i.s_name,"from",i.city)
  }
+
+ for(i=0;i<=10;i++)
+ {
+    console.log(`5x${i}=${i*5}`)
+ }
+ let str="Welcome"
+ let str1=""
+ for(i=str.length-1;i>=0;i--)
+{
+str1+=str[i]
+// console.log(str1)
+}
+console.log(str1)
+st=""
+for(i=0;i<6;i++)
+{
+st+="*"
+    console.log(st)
+}
+
+
+
+
+
