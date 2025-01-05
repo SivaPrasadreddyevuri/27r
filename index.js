@@ -60,16 +60,50 @@
 //  console.log(b)
    
 //task3
- let c=["one","two","three","four"]
-  for(i=0;i<c.length;i++)
-  {
-    console.log(c[i])
-    // for(i=c[i].length-1;i>=0;i--){
+//  let c=["one","two","three","four"]
+//   for(i=0;i<c.length;i++)
+//   {
+//     console.log(c[i])
+//   }
+// while(false){
+//   console.log("siva")
+// }
+// do{
+//   console.log("prasad")
+//   }
+// while(false)
+  //conditional loops
+//simple-if
 
-    // }
-  }
-
-
+// if(true)
+// {
+//   console.log("hi")
+// }
+// //if-else
+// if(true)
+// {
+//   console.log("true")
+// }
+// else{
+//   console.log("false")
+// }
+ 
+let user=prompt("admin")
+let login=true;
+ if(login==true)
+ {
+  if(user=="admin")
+    {
+      alert("welcome")
+    }
+    else{
+      alert("please Re-check User")
+    }
+ }
+else
+{
+  alert("please Login")
+}
 
 
 
