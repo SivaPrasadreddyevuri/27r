@@ -88,22 +88,73 @@
 //   console.log("false")
 // }
  
-let user=prompt("admin")
-let login=true;
- if(login==true)
- {
-  if(user=="admin")
-    {
-      alert("welcome")
+// let user=prompt("admin")
+// let login=true;
+//  if(login==true)
+//  {
+//   if(user=="admin")
+//     {
+//       alert("welcome")
+//     }
+//     else{
+//       alert("please Re-check User")
+//     }
+//  }
+// else
+// {
+//   alert("please Login")
+// }
+
+//Switch Statement //it is compare expressions strictly both value and data type
+//  let nam="SivaPrasadReddy";
+
+// switch(nam)
+// {
+//   default:console.log("HI");
+//   break;
+//  case "reddy":console.log("SivaPrasadReddy");
+//  case "prasad":console.log("prasad reddy");
+// }
+
+let arr=["siva","prasad","reddy", "evuri"]
+let arr1=[]
+ for(i=arr.length-1;i>=0;i--)
+  {
+    // console.log(arr[i])
+    for(j=arr[i].length-1;j>=0;j--)
+      {
+        //console.log(arr[i][j])
+        arr1[arr1.length]=arr[i][j]
+      }
+      //console.log(arr1)
     }
-    else{
-      alert("please Re-check User")
-    }
- }
-else
+
+
+      console.log(arr1)
+
+
+let str=""
+for(i=0;i<8;i++)
 {
-  alert("please Login")
+ str+="*"
+//  for(j=str.length-1;j>=0;j--)
+//  {
+//   str+=str[i][j]
+
+//  }
+console.log(str)
 }
+for(i=0;i<=20;i++)
+{
+  console.log(`15x${i}=${i*15}`)
+}
+
+
+
+
+
+
+
 
 
 
