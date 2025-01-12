@@ -60,14 +60,86 @@
 //  console.log(b)
    
 //task3
- let c=["one","two","three","four"]
-  for(i=0;i<c.length;i++)
-  {
-    console.log(c[i])
-    // for(i=c[i].length-1;i>=0;i--){
+//  let c=["one","two","three","four"]
+//   for(i=0;i<c.length;i++)
+//   {
+//     console.log(c[i])
+//     // for(i=c[i].length-1;i>=0;i--){
 
-    // }
+//     // }
+//   }
+// decleration of function
+// function sum()
+// {
+//   console.log("hello")
+// }
+// sum()  // function invoke
+
+// // function with parameters
+// function sum(x,y)
+// {
+//   console.log(x+y);
+// }
+// sum(9,8)
+// function with out parameters
+// function sum()
+// {
+//   console.log("hello");
+//   return "hi"
+// }
+// console.log(sum())
+
+// // annoymous function
+// // variable function
+// var x=function () {
+
+// }
+// //eg:
+// var x1=function(x,y)
+// {
+//   return x+y;
+// }
+// console.log(x1(6,5))
+// // arrow function
+// var x=()=>{
+
+// }
+// //eg:
+// var x1=(x,y)=>
+// {
+//   return x+y;
+// }
+// console.log(x1(7,5))
+// // arrow function with single parameter
+//  var a=x=>x;
+//  console.log(a(9,8))
+
+//call back function
+
+// function sample(x)
+// {
+//   x();                  // higher ordered function
+//   console.log("hii")
+// }
+// sample(
+//   function demo()
+//   {                       // call back function
+//     console.log("demo")
+//   }
+// )
+
+function sample(x)
+{
+  x();                  // higher ordered function
+  return "hiii"
+}
+console.log(sample(
+  function demo()
+  {                       // call back function
+    console.log("demo")
   }
+))
+
 
 
 
