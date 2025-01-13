@@ -61,16 +61,19 @@
    
 //task3
  let c=["one","two","three","four"]
+ let arr=[]
   for(i=0;i<c.length;i++)
   {
-    console.log(c[i])
-    // for(i=c[i].length-1;i>=0;i--){
-
-    // }
+    // console.log(c[i])
+    for(j=c[i].length-1;j>=0;j=j-2)
+    {
+   arr[arr.length]=c[i][j]
+    }
+    
   }
+console.log(arr)
 
-
-
+   
 
 
 
