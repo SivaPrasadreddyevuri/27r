@@ -15,11 +15,12 @@
 
 //Problem 4: Print Even Numbers Up to a Given Number
 let input=prompt("Enter a Positive Integer")
+let arr=[]
 function isEvenOrNot()
 {
-    if(input%2==0)
+  for(i=arr.length-1;i>=0;i=i-2) 
     {
-        alert(`Entered ${input} is Even`);
-    }
+    } 
+    console.log(arr)
 }
 isEvenOrNot();
