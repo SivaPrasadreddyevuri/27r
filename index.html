@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        background-color: aqua;
+      }
+   .d1{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid;
+    padding:30px;
+    background-color: black;
+    align-content:center;
+    border-radius: 20px;
+    width: 60%;
+    gap: 20px;
+    height: 200px;
+    margin: auto;
+   }
+   #count{
+    color: antiquewhite;
+    border: 2px solid green;
+    width:40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    height: fit-content;
+   }
+    .but{
+      display: flex;
+      flex-wrap: wrap;
+      height:80px;
+    }
+  
+    </style>
+  </head>
+  <body>
+    <!-- <h1 class="h1" id="he">hi</h1>
+    <p class="h1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor similique
+      natus, ab optio tempore officia tempora ut. Mollitia, distinctio ratione
+      omnis ut, sint iure repellat est aliquid cupiditate libero dolores?
+    </p>
+    <h1 class="h1">hello</h1>
+    <button onclick="changeText()">click me</button>
+    <button onclick="addStyle()">click me also</button> -->
+
+    <div class="d1">
+      <div class="but"><button onclick="increment()">Incremet</button></div>
+      <h1 id="count">0</h1>
+      <div class="but"><button onclick="decremet()">Decrement</button></div>
+      <div class="but"><button onclick="reset()">Reset</button></div>
+    </div>
+
+    <script>
+      // let x=document.getElementsByClassName("h1")
+      // let arr=document.getElementById("he")
+
+      // // x[1].innerHTML="<h1>welcome</h1>"
+      // // x[2].innerText="<h1>hiiiiii</h1>"
+      // // console.log(x[1].innerHTML)
+      // //console.log(x[2].innerText)
+      // arr.innerHTML="<i>ID</i>"
+      // // arr.innerText="<i>i</i>"
+      // // console.log(arr.innerHTML)
+      // let x=document.getElementById("he")
+
+      // function changeText()
+      // {
+      //   x.innerHTML="lorem"
+      // }
+
+      // function addStyle()
+      // {
+      // x.style.color="red"
+      // }
+      let num = 0;
+
+      function increment() {
+        num += 1;
+        console.log(num);
+        document.getElementById("count").innerHTML = num;
+      }
+      function decremet()
+      {
+        num-=1
+        console.log(num)
+        document.getElementById("count").innerHTML=num
+      }
+      function reset() {
+        num = 0;
+        console.log(num);
+        document.getElementById("count").innerHTML = num;
+      }
+    </script>
+  </body>
+</html>

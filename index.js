@@ -128,17 +128,17 @@
 //   }
 // )
 
-function sample(x)
-{
-  x();                  // higher ordered function
-  return "hiii"
-}
-console.log(sample(
-  function demo()
-  {                       // call back function
-    console.log("demo")
-  }
-))
+// function sample(x)
+// {
+//   x();                  // higher ordered function
+//   return "hiii"
+// }
+// console.log(sample(
+//   function demo()
+//   {                       // call back function
+//     console.log("demo")
+//   }
+// ))
 
 
 
