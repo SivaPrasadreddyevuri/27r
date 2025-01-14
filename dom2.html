@@ -7,6 +7,7 @@
   </head>
   <body>
     <!-- <h1 id="h1">hiiii</h1> -->
+    
 
     <p class="p1">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem
@@ -33,6 +34,7 @@
       laboriosam.
     </p>
     <button onclick="addDiv()" id="btn1">Showme</button>
+    <button onclick="remove()">Remove</button>
 
     <script>
       let x = document.querySelector("p"); // getting only first element
@@ -45,23 +47,32 @@
       // creating Elements Methods:
       let a = document.createElement("div");
       let image = document.createElement("img");
-      let title=document.createElement("h1")
+      let title = document.createElement("h1");
+      let desc = document.createElement("p");
       function addDiv() {
-        btn1.innerHTML="Remove"
+        // btn1.innerHTML = "Remove";
         a.style.border = "2px solid red";
         a.style.width = "250px";
-        a.style.height = "160px";
+        a.style.height = "320px";
+        a.style.padding="20px"
         document.body.append(a);
         image.setAttribute(
           "src",
           "https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
         );
         a.append(image);
-        image.style.height="50%"
-         image.style.width="100%"
-         title.innerHTML="SUN"
-         a.append(title)
-      }
-    </script>
+        image.style.height = "50%";
+        image.style.width = "100%";
+        title.innerHTML = "SUN";
+        a.append(title);
+        desc.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est veritati"
+          a.append(desc)
+          }
+          function remove(){
+            // a.remove()
+            // image.removeAttribute("src")
+            // title.innerHTML=""
+          }
+              </script>
   </body>
 </html>
