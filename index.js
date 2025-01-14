@@ -1,9 +1,18 @@
 // level 1 tasks
 
+// Problem 1: FizzBuzz with "Hello" and "Javascript"
+        // Write a program using a loop that prints the numbers from 1 to 100, but for multiples of 3 print 
+        // "Hello" and for multiples of 5 print "Javascript". For numbers that are multiples of both 3 and 5, print 
+        // "Hello Javascript"
+
+        // for(i=1;i<=100;i++)
+        // {
+         
+        // }
+
 //problem 2: checking Year is Leap Or Not?
 
-// let year=prompt("Enter a Year for Checking Leapyear Or Not")
-// function isLeapOrNot()
+// function isLeapOrNot(year)
 // {
 //     if(year%400===0){
 //         alert(` true ${year} is Leap year`)
@@ -13,20 +22,31 @@
 //         alert(` false ${year} is Not a Leap Year`)
 //     }
 // }
-// isLeapOrNot();
+// isLeapOrNot(prompt("Enter a Year for Checking Leapyear Or Not"));
 
-//Problem 4: Print Even Numbers Up to a Given Number?
+// Problem 3: Calculate Factorial
+// Create a function factorial that calculates the factorial of a number n.
 
-// let input=prompt("Enter a Positive Integer")
+
+// factorial(prompt("Enter a Positive Integer"))
+
+// Problem 4: Print Even Numbers Up to a Given Number?
+
+
 // let arr=[]
-// function isEvenOrNot()
+// function isEvenOrNot(input)
 // {
-//   for(i=arr.length-1;i>=0;i=i-2) 
+//   if(input%2==0)
+//   {
+//     for(i=0;i<=input;i=i+2)
 //     {
-//     } 
-//     console.log(arr)
+//         arr[arr.length]=i
+//     }
+//   }
+//  return arr;
 // }
-// isEvenOrNot();
+// console.log(isEvenOrNot(prompt("Enter a Positive Integer")));
+
 
 
 
@@ -57,3 +77,18 @@
 //   alert(`Hello ${x}!`)
 // }
 // wish(prompt("Enter Name"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
