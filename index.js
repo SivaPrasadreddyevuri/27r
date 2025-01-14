@@ -125,7 +125,7 @@ let div1 = document.createElement("div");
      function remove()
      {
         div1.remove();
-        document.body.innerHTML="GO TO SHOW ME!!"
+        document.body.innerHTML="Refresh The Document <br><br> GO TO SHOW ME!!"
         document.body.style.backgroundColor="Gray"
      }
 
