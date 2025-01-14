@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="h1">hiiii</h1> -->
+
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem
+      obcaecati, magni pariatur ab eveniet eaque laboriosam ipsum id qui eum
+      eligendi veniam quia cupiditate voluptatum corporis sit? Repudiandae,
+      laboriosam.
+    </p>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem
+      obcaecati, magni pariatur ab eveniet eaque laboriosam ipsum id qui eum
+      eligendi veniam quia cupiditate voluptatum corporis sit? Repudiandae,
+      laboriosam.
+    </p>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem
+      obcaecati, magni pariatur ab eveniet eaque laboriosam ipsum id qui eum
+      eligendi veniam quia cupiditate voluptatum corporis sit? Repudiandae,
+      laboriosam.
+    </p>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem
+      obcaecati, magni pariatur ab eveniet eaque laboriosam ipsum id qui eum
+      eligendi veniam quia cupiditate voluptatum corporis sit? Repudiandae,
+      laboriosam.
+    </p>
+    <button onclick="addDiv()" id="btn1">Showme</button>
+
+    <script>
+      let x = document.querySelector("p"); // getting only first element
+
+      console.log(x);
+      let y = document.querySelectorAll("p"); // getting All elements of P-element
+
+      console.log(y);
+
+      // creating Elements Methods:
+      let a = document.createElement("div");
+      let image = document.createElement("img");
+      let title=document.createElement("h1")
+      function addDiv() {
+        btn1.innerHTML="Remove"
+        a.style.border = "2px solid red";
+        a.style.width = "250px";
+        a.style.height = "160px";
+        document.body.append(a);
+        image.setAttribute(
+          "src",
+          "https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
+        );
+        a.append(image);
+        image.style.height="50%"
+         image.style.width="100%"
+         title.innerHTML="SUN"
+         a.append(title)
+      }
+    </script>
+  </body>
+</html>
