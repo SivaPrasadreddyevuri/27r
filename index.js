@@ -4,11 +4,23 @@
         // Write a program using a loop that prints the numbers from 1 to 100, but for multiples of 3 print 
         // "Hello" and for multiples of 5 print "Javascript". For numbers that are multiples of both 3 and 5, print 
         // "Hello Javascript"
+        function print(num)
+        {
 
-        // for(i=1;i<=100;i++)
-        // {
-         
-        // }
+          for(i=1;i<=100;i++)
+            {
+              if(i%num===0)
+              {
+                console.log("Hello")
+              }
+              else
+              {
+                 console.log(i)
+              }
+            }
+        }    
+        print(3)          
+        
 
 //problem 2: checking Year is Leap Or Not?
 
@@ -78,56 +90,70 @@
 // }
 // wish(prompt("Enter Name"))
 
+
+// Problem 8: Sum of Digits in a Number
+
+// Write a function sumOfDigits that calculates the sum of all digits in a given number. For example, for 
+// the number 12345, the sum is 1 + 2 + 3 + 4 + 5 = 15.
+
+let num=12345
+let numStr=num.toString()
+let result=[]
+for(i=0;i<=numStr.length;i++)
+{
+
+}
+console.log(result)
 // DOM TASK:
 // ---------------
 // Create an ID-Card using DOM
 
-let div1 = document.createElement("div");
-      let pic = document.createElement("img");
-      let desc = document.createElement("p");
-      let clg = document.createElement("h2");
-      function display()
-      {
-        document.body.append(div1);
-      div1.style.border = "1px solid";
-      div1.style.height = "500px";
-      div1.style.width = "350px";
-      div1.style.margin = "auto";
-      desc.style.marginLeft = "15px";
-      div1.style.backgroundColor = "skyblue";
-      div1.style.borderRadius="60px"
-      div1.style.boxShadow="-6px 10px 25px Green";
-    //   div1.style.transform="translateY(20px)"
+// let div1 = document.createElement("div");
+//       let pic = document.createElement("img");
+//       let desc = document.createElement("p");
+//       let clg = document.createElement("h2");
+//       function display()
+//       {
+//         document.body.append(div1);
+//       div1.style.border = "1px solid";
+//       div1.style.height = "500px";
+//       div1.style.width = "350px";
+//       div1.style.margin = "auto";
+//       desc.style.marginLeft = "15px";
+//       div1.style.backgroundColor = "skyblue";
+//       div1.style.borderRadius="60px"
+//       div1.style.boxShadow="-6px 10px 25px Green";
+//     //   div1.style.transform="translateY(20px)"
 
-      //append all the Content
-      div1.append(clg);
-      div1.append(pic);
-      div1.append(desc);
-      //adding image 
-      pic.setAttribute(
-        "src",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaDRP4WH3D0p03Z8EYsBu669ZXVF_HO5S8Sw&s"
-      );
-      pic.style.width = "130px";
-    //   pic.style.height = "px";
-      pic.style.marginLeft="100px" ;
-      desc.innerHTML =
-        "Sur_Name:Evuri<br><br>Name:SivaPrasadReddy<br><br>Section:13B<br><br>Branch: BSc Computers<br><br>Admission Id:7093<br><br>Blood_Group: O+";
+//       //append all the Content
+//       div1.append(clg);
+//       div1.append(pic);
+//       div1.append(desc);
+//       //adding image 
+//       pic.setAttribute(
+//         "src",
+//         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaDRP4WH3D0p03Z8EYsBu669ZXVF_HO5S8Sw&s"
+//       );
+//       pic.style.width = "130px";
+//     //   pic.style.height = "px";
+//       pic.style.marginLeft="100px" ;
+//       desc.innerHTML =
+//         "Sur_Name:Evuri<br><br>Name:SivaPrasadReddy<br><br>Section:13B<br><br>Branch: BSc Computers<br><br>Admission Id:7093<br><br>Blood_Group: O+";
      
-      desc.style.padding = "16px";
-      desc.style.fontSize="18px"
-      //clg styling:
-      clg.innerHTML = "Vagdevi Degree College<br> Narasaraopet";
-      clg.style.textAlign = "center";
-      clg.style.color = "orangered";
-      clg.style.textShadow = "10px 10px 10px orange";
-      }
-     function remove()
-     {
-        div1.remove();
-        document.body.innerHTML="Refresh The Document <br><br> GO TO SHOW ME!!"
-        document.body.style.backgroundColor="Gray"
-     }
+//       desc.style.padding = "16px";
+//       desc.style.fontSize="18px"
+//       //clg styling:
+//       clg.innerHTML = "Vagdevi Degree College<br> Narasaraopet";
+//       clg.style.textAlign = "center";
+//       clg.style.color = "orangered";
+//       clg.style.textShadow = "10px 10px 10px orange";
+//       }
+//      function remove()
+//      {
+//         div1.remove();
+//         document.body.innerHTML="Refresh The Document <br><br> GO TO SHOW ME!!"
+//         document.body.style.backgroundColor="Gray"
+//      }
 
 
 
