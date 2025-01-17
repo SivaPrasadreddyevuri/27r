@@ -45,12 +45,13 @@
 // Problem 3: Calculate Factorial
 // Create a function factorial that calculates the factorial of a number n.
 
-let num=5
-for(i=num-1;i>=0;i--)
-{
-//  var result=num*(num-i)
-}
-console.log(result)
+// let num=4
+// let result=1
+// for(i=2;i<=num;i++)
+// {
+// result=result*i
+// }
+// console.log(result)
 
 // Problem 4: Print Even Numbers Up to a Given Number?
 
@@ -184,3 +185,15 @@ console.log(result)
 //         document.body.innerHTML="Refresh The Document <br><br> GO TO SHOW ME!!"
 //         document.body.style.backgroundColor="Gray"
 //      }
+
+
+
+
+
+// let num=[1,2,3,4]
+// let sum=0
+// for(i=0;i<num.length;i++)
+// {
+//     sum+=num[i]
+// }
+// console.log(sum)
