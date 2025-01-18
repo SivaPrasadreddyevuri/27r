@@ -3,10 +3,10 @@
 let str = "  HelloWorld  ";
 let str2="html"
 let str3="css js"
-//  let str1 = str.charAt(4);
+let str1 = str.charAt(0);
 //  //getting requride character through index value by using string methods
 
-// let str1= str.at(-1) 
+ //let str1= str.at(-1) 
 // //getting from reverse by using this method
 
 // let str1=str.slice(2,5) 
@@ -58,5 +58,5 @@ let str3="css js"
  
 //    let str1=str.repeat(3)
 // reapeating string by giving count inside paranthasis()
-
-console.log(str1);
+// console.log(str1);
+console.log(str1)
