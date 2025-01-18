@@ -1,45 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            background-color:rgba(159, 147, 147, 0.226);
-        }
-        *{
-            margin: 0px;
-            box-sizing: border-box;
-        }
-        .head{
-            position: fixed;
-            border: 1px solid white;
-            width: 100%;
-            padding: 20px;
-            background-color: white;
-        }
-        nav{
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+        position: relative;
+      }
+      .nav1 {
+        position: fixed;
+        z-index: 1;
         display: flex;
-        gap: 40px;
-        justify-content:center;
         flex-wrap: wrap;
-        
-        }
+        justify-content: center;
+        gap: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        background-color: white;
+        width: 100%;
+        /* opacity:0.4; */
+      }
+      .home {
+        padding: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+      }
+      .home > img {
+        width: 350px;
+        border-radius: 50%;
+        opacity: 0.4;
+      }
+      .abt {
+        text-align: center;
+        font-size: 20px;
+      }
+      .skills {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: auto;
+      }
+      .year {
+        border: 1px solid;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+       align-content: center;
+        background-color: black;
+       color: white;
+       display:block;
+       text-align: center;
+      }
+      .edu{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-content: center;
+      }
+      #name,#mail{
+        width: 300px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      #cont{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      border: 2px solid ;
+      border-radius: 20px;
+      /* width: 600px; */
+      margin: auto;
+      flex-wrap: wrap;
+      }
+     #sub
+     {
+      width: 80px;
+      padding: 8px;
+     }
     </style>
-</head>
-<body>
-    <div class="head">
-        <nav>
-            <h1>Home</h1>
-            <h1>About</h1>
-            <h1>Skills</h1>
-            <h1>Education</h1>
-            <h1>Work</h1>
-            <h1>Contact</h1>
-            
-        </nav>
+  </head>
+  <body>
+    <nav class="nav1">
+      <!-- <h1>SivaPrasadReddy</h1> -->
+      <h1>Home</h1>
+      <h1>About</h1>
+      <h1>Skills</h1>
+      <h1>Education</h1>
+      <!-- <h1>Work</h1> -->
+      <h1>Contact</h1>
+    </nav>
+    <header class="home">
+      <h1 style="margin-top: 120px">
+        Hello! Everyone.......!<br />I'm Evuri SivaPrasad Reddy
+      </h1>
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/024/183/525/non_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg"
+        alt=""
+      />
+    </header>
+    <div class="abt">
+      <h1>About me</h1>
+      <br /><br />
+      <p>
+        I'm, a passionate and creative front-end developer from Ravipadu,
+        Narasaraopet. With a background in English Literature and experience as
+        an English teacher and an accountant, I bring a unique perspective to my
+        work in web development.<br />
+
+        I have mastered HTML, CSS, JavaScript, and Bootstrap, and I love
+        creating beautiful and functional user interfaces. I am an enthusiastic
+        learner, currently focusing on honing my skills to become a top-tier
+        front-end developer. My goal is to craft intuitive and engaging web
+        experiences.<br />
+
+        In addition to my technical skills, I am an active participant in
+        debates, essay writing, and speech competitions, which has enhanced my
+        communication abilities. Outside of coding, I enjoy playing basketball
+        and exploring new technologies on the internet.<br />
+        Let's connect and create something amazing together!
+      </p>
+    </div>
+    <h1 style="text-align: center">Skills</h1>
+    <div class="skills">
+      <h2>Technical Skills</h2>
+      <br />
+      <label for="html">HTML </label>
+      <input type="range" id="html" max="100px" value="90" disabled /><br />
+      <label for="css">CSS </label>
+      <input
+        type="range"
+        id="css"
+        min="0px"
+        max="100px"
+        value="80"
+        disabled
+      /><br />
+      <label for="bs">Boot Strap</label>
+      <input
+        type="range"
+        id="bs"
+        min="0px"
+        max="100px"
+        value="80"
+        disabled
+      /><br />
+      <label for="js">JavaScript</label>
+      <input
+        type="range"
+        id="js"
+        min="0px"
+        max="100px"
+        value="40"
+        disabled
+      /><br />
+      <h2>Professional Skills</h2>
+      <label for="p1">Communication</label>
+      <input type="range" id="p1" min="0px" max="100px" value="75" disabled />
+      <label for="p2">Leadership</label>
+      <input type="range" id="p2" min="0px" max="100px" value="60" disabled />
+      <label for="p3">Confidence</label>
+      <input type="range" id="p3" min="0px" max="100px" value="60" disabled />
+    </div>
+    <br /><br />
+    <h1 style="text-align: center">EDUCATION</h1>
+    <br /><br />
+    <div class="edu">
+      <div class="year"><h2>2018</h2></div>
+      <div class="e1">
+        <h3>Bacholer's Degree in BSc Computers</h3>
+      </div>
+      <div class="year"><h2>2015</h2></div>
+      <div class="e1">
+        <h3>Bacholer's Degree in BSc Computers</h3>
+      </div>
+      <div class="year"><h2>2013</h2></div>
+      <div class="e1">
+        <h3>Bacholer's Degree in BSc Computers</h3>
+      </div>
     </div>
 
-</body>
+        <form action="" id="cont">
+          <label for="name">Enter Your Name</label>
+          <input type="text" id="name" required placeholder="Name"><br><br>
+          <label for="mail">Enter Your Email</label>
+          <input type="email" id="mail" required placeholder="Emali"><br><br>
+          <textarea name="" id="msg" rows="8" cols="50" required placeholder="Write message Here:"></textarea><br><br>
+          <input type="submit" id="sub">
+        </form>
+  </body>
 </html>
