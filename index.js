@@ -3,7 +3,7 @@
 let str = "  HelloWorld  ";
 let str2="html"
 let str3="css js"
-let str1 = str.charAt(4);
+// let str1 = str.charAt(4);
 //  //getting requride character through index value by using string methods
 
 // let str1= str.at(-1) 
