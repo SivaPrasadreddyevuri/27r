@@ -197,3 +197,15 @@
 //     sum+=num[i]
 // }
 // console.log(sum)
+
+
+// let a=12345
+// let b=a.toString()
+// let c=""
+// for(i=0;i<b.length;i++)
+// {
+// // c[c.length]+=b[i]
+// // c[c.length]+=b[i]
+// c+=b[i]
+// console.log(c)
+// }
