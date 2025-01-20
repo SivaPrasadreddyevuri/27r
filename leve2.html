@@ -288,7 +288,7 @@
 ];
 
       for(i=0;i<list.length;i++)
-      {
+      { 
         let div1=document.createElement("div")
       div1.style.border="2px solid"
       div1.style.height="40%"
@@ -297,6 +297,9 @@
       div1.style.padding="3px"
       div1.style.borderRadius="5px"
       document.body.append(div1)
+       let but=document.createElement("button")
+       but.innerHTML="Remove"
+       but.setAttribute("src",remove())
 
       let title=document.createElement("h1")
       title.innerHTML=list[i].title
@@ -341,9 +344,7 @@
       count.style.backgroundColor="gray"
       count.style.textAlign="center"
 
-
-
-      div1.append(title_contr,image,price,desc_contr,cat,rate,count)
+      div1.append(but,title_contr,image,price,desc_contr,cat,rate,count)
       main_div.append(div1)
       }
     </script>
