@@ -1,0 +1,50 @@
+let arr=[1,4,5,"siva",7,9,12] // declaring array literal approach
+
+//declaring array via array constructer
+
+// let arr1=new Array(1,2,3,5,"hi",5)
+
+// // array methods:
+
+// let str=arr.toString()// array to string
+// console.log(typeof str)
+// console.log(typeof arr)
+
+
+let a=[1,5,6,8,9,3,4,5,6,"hello"]
+//  let b=a.at(-4)
+//  console.log(b)
+
+//  let s=a.slice(-3,-1)
+//  console.log(s)
+//  let s1=a.slice(3,5)
+//  console.log(s1)
+
+//  let join=a.join("-")
+//  console.log(join)
+//  console.log(typeof join)
+//  console.log(a)
+
+//  let removingLastElement=a.pop()
+// console.log(a)
+// console.log(typeof removingLastElement)
+
+// let addingAtLast=a.push("array")
+// console.log(a)
+
+// let shift=a.shift()
+// console.log(a)
+// console.log(shift)
+
+// let unshift=a.unshift("3")//add an element to array at first
+// console.log(a)
+// console.log(unshift)
+
+let splice=a.splice(6)// for giving single parameter it will return no.of elements accordingly to given parameter
+console.log(a)
+
+let splice2=a.splice(2,2,"hi","98")
+console.log(a)
+console.log(splice2)
+
+
