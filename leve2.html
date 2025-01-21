@@ -8,6 +8,12 @@
   <style>
   ::-webkit-scrollbar{
     display: none;
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
   }
   </style>
   <body>
@@ -18,6 +24,8 @@
     main_div.style.display="flex"
     main_div.style.flexWrap="wrap"
     main_div.style.justifyContent="center"
+    main_div.style.gap="30px"
+    main_div.innerHTML=""
     let list=[
   {
     id: 1,
@@ -290,15 +298,30 @@
       for(i=0;i<list.length;i++)
       { 
         let div1=document.createElement("div")
-      div1.style.border="2px solid"
-      div1.style.height="40%"
+      div1.style.border="2px solid white"
+      div1.style.height="40% "
       div1.style.width="300px"
       div1.style.margin="8px"
-      div1.style.padding="3px"
-      div1.style.borderRadius="5px"
+      div1.style.padding="1px"
+      div1.style.borderRadius="9px"
+      div1.addEventListener("mouseover",function()
+    {
+      div1.style.transform="scale(1.03)"
+      div1.style.boxShadow="1px 2px 4px 4px green"
+    })
+    div1.addEventListener("mouseout",function()
+  {
+    div1.style.transform="scale(1)"
+    div1.style.boxShadow="0px 0px 0px 0px"
+  })
       document.body.append(div1)
        let but=document.createElement("button")
        but.innerHTML="X"
+       but.style.marginLeft="280px"
+       but.style.padding="5px"
+       but.style.borderRadius="13px"
+       but.style.color="red"
+       but.style.border="none"
        but.onclick=function remove()
        {
         div1.remove()
@@ -322,7 +345,7 @@
       let image=document.createElement("img")
       image.setAttribute("src",list[i].image)
       image.style.width="100%"
-      image.style.height="330px"
+      image.style.height="200px"
 
       let desc=document.createElement("p")
       desc.innerHTML=list[i].description
@@ -334,16 +357,17 @@
 
 
       let cat=document.createElement("h2")
-      cat.innerHTML=list[i].category
+      cat.innerHTML=`Category:${list[i].category}`
       cat.style.backgroundColor="orangered"
 
       let rate=document.createElement("h3")
       rate.innerHTML=`Rating:${list[i].rating.rate}`
       rate.style.backgroundColor="orange"
+      rate.style.textAlign="center"
       
       
       let count=document.createElement("h2")
-      count.innerHTML=list[i].rating.count
+      count.innerHTML=`Reviews:${list[i].rating.count}`
       count.style.backgroundColor="gray"
       count.style.textAlign="center"
 
