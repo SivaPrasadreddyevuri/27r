@@ -298,8 +298,11 @@
       div1.style.borderRadius="5px"
       document.body.append(div1)
        let but=document.createElement("button")
-       but.innerHTML="Remove"
-       but.setAttribute("src",remove())
+       but.innerHTML="X"
+       but.onclick=function remove()
+       {
+        div1.remove()
+       }
 
       let title=document.createElement("h1")
       title.innerHTML=list[i].title
