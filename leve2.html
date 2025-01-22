@@ -8,24 +8,27 @@
   <style>
   ::-webkit-scrollbar{
     display: none;
-    *
-    {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
   }
   </style>
   <body>
 
     <script>
-      let main_div=document.createElement("div")
+      let heading=document.createElement("h1")
+      heading.innerText="Creating Cards By Using DOM methods"
+      heading.style.textAlign="center"
+      document.body.style.backgroundColor="black"
+      heading.style.color="white"
+      heading.style.textDecoration="underline"
+      heading.style.textShadow="7px 9px 8px skyblue "
+      document.body.append(heading)
+
+    let main_div=document.createElement("div")
     document.body.append(main_div)
     main_div.style.display="flex"
     main_div.style.flexWrap="wrap"
     main_div.style.justifyContent="center"
     main_div.style.gap="30px"
-    main_div.innerHTML=""
+    main_div.style.backgroundColor="black"
     let list=[
   {
     id: 1,
@@ -298,7 +301,7 @@
       for(i=0;i<list.length;i++)
       { 
         let div1=document.createElement("div")
-      div1.style.border="2px solid white"
+      div1.style.border="2px solid"
       div1.style.height="40% "
       div1.style.width="300px"
       div1.style.margin="8px"
@@ -319,8 +322,9 @@
        but.innerHTML="X"
        but.style.marginLeft="280px"
        but.style.padding="5px"
-       but.style.borderRadius="13px"
+       but.style.borderRadius="10px"
        but.style.color="red"
+       but.style.backgroundColor="black"
        but.style.border="none"
        but.onclick=function remove()
        {
@@ -333,6 +337,7 @@
       title_contr.append(title)
       title_contr.style.height="100px"
       title_contr.style.backgroundColor="green"
+      title_contr.style.borderRadius="8px"
       title_contr.style.color="white"
       title_contr.style.padding="2px"
       title_contr.style.textAlign="center"
