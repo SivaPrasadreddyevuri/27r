@@ -40,11 +40,62 @@ let a=[1,5,6,8,9,3,4,5,6,"hello"]
 // console.log(a)
 // console.log(unshift)
 
-let splice=a.splice(6)// for giving single parameter it will return no.of elements accordingly to given parameter
-console.log(a)
+// let splice=a.splice(6)// for giving single parameter it will return no.of elements accordingly to given parameter
+// console.log(a)
 
-let splice2=a.splice(2,2,"hi","98")
-console.log(a)
-console.log(splice2)
+// let splice2=a.splice(2,2,"hi","98")
+// console.log(a)
+// console.log(splice2)
 
 
+    
+
+
+//find() method:
+
+let arr1=[2,6,9,"hi","siva","Apple" ]
+
+
+ let op=arr1.find(function(x,y,z){     
+   
+    // return x>4;
+    // return x.length>3   
+    return y>3
+
+})
+console.log(op)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let br=["siva","si","va"]
+
+ let o=br.map(function(value,index,br)
+{
+    return value+"hello"     // by using return we get new array
+})
+console.log(o)
+
+
+
+br.map(function(value,index,br)
+{
+console.log (value+"hello")     // by using console we get new array
+})
+
+let arr4=["hi","java","apple","red"]
+ let y=arr4.map(function(value,index,arr4)
+ {
+  return value.slice(0,-1)+value.at(-1).toUpperCase()
+ })
+console.log(y)
