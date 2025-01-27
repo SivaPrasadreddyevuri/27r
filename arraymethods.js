@@ -11,7 +11,7 @@ let arr=[1,4,5,"siva",7,9,12] // declaring array literal approach
 // console.log(typeof arr)
 
 
-let a=[1,5,6,8,9,3,4,5,6,"hello"]
+// let a=[1,5,6,8,9,3,4,5,6,"hello"]
 //  let b=a.at(-4)
 //  console.log(b)
 
@@ -54,48 +54,45 @@ let a=[1,5,6,8,9,3,4,5,6,"hello"]
 //find() method:
 
 let arr1=[2,6,9,"hi","siva","Apple" ]
-
-
- let op=arr1.find(function(x,y,z){     
-   
-    // return x>4;
-    // return x.length>3   
-    return y>3
-
-})
-console.log(op)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let br=["siva","si","va"]
-
- let o=br.map(function(value,index,br)
-{
-    return value+"hello"     // by using return we get new array
-})
-console.log(o)
-
-
-
-br.map(function(value,index,br)
-{
-console.log (value+"hello")     // by using console we get new array
+// let op=arr1.find(function(x,y,arr1)
+// {
+//    return x.length>4
+// })
+// console.log(op)
+let op=arr1.find((value,index,arr1)=>{
+    return
 })
 
-let arr4=["hi","java","apple","red"]
- let y=arr4.map(function(value,index,arr4)
- {
-  return value.slice(0,-1)+value.at(-1).toUpperCase()
- })
-console.log(y)
+
+
+
+
+
+
+
+
+
+
+
+
+// let br=["siva","si","va"]
+
+//  let o=br.map(function(value,index,br)
+// {
+//     return value+"hello"     // by using return we get new array
+// })
+// console.log(o)
+
+
+
+// br.map(function(value,index,br)
+// {
+// console.log (value+"hello")     // by using console we get new array
+// })
+
+// let arr4=["hi","java","apple","red"]
+//  let y=arr4.map(function(value,index,arr4)
+//  {
+//   return value.slice(0,-1)+value.at(-1).toUpperCase()
+//  })
+// console.log(y)
