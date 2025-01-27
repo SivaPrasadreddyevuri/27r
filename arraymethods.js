@@ -78,11 +78,13 @@ let arr2=["hi","hello","welcome","Done"]
 // })
 // console.log(b)
 
-arr2.map((x,y,arr2)=>{
-     console.log(x.slice(0,-1)+x.at(-1).toUpperCase())
+// arr2.map((x,y,arr2)=>{
+//      console.log(x.slice(0,-1)+x.at(-1).toUpperCase())
+// })
+let op=arr2.forEach((x,y,arr2)=>{
+  return x+3
 })
-
-
+console.log(op)
 
 
 // let br=["siva","si","va"]
