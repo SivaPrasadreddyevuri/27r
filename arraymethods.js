@@ -1,4 +1,4 @@
-let arr=[1,4,5,"siva",7,9,12] // declaring array literal approach
+// let arr=[1,4,5,"siva",7,9,12] // declaring array literal approach
 
 //declaring array via array constructer
 
@@ -81,10 +81,10 @@ let arr2=["hi","hello","welcome","Done"]
 // arr2.map((x,y,arr2)=>{
 //      console.log(x.slice(0,-1)+x.at(-1).toUpperCase())
 // })
-let op=arr2.forEach((x,y,arr2)=>{
-  return x+3
+arr2.forEach((x,y,arr2)=>{
+  console.log(x+3)
 })
-console.log(op)
+
 
 
 // let br=["siva","si","va"]
@@ -108,3 +108,46 @@ console.log(op)
 //   return value.slice(0,-1)+value.at(-1).toUpperCase()
 //  })
 // console.log(y)
+
+let arr=[4,7,9,56,3,2]
+
+// let br=arr.filter((x,y,z)=>{
+//  return x>3
+// })
+// console.log(br)
+
+// let br1=arr.reduce((x,y,z)=>{
+//     console.log(x,y)
+//     return x+y
+// })
+// console.log(br1)
+
+// let br2=arr.reduceRight((x,y,z)=>{
+//     console.log(x,y)
+//     return x+y
+// })
+// console.log(br2)
+
+let br3=arr.sort() // normal sorting
+console.log(br3)
+ 
+let sort=arr.sort((a,b)=>{
+//   return a-b // asecendng order
+  return b-a //decending order
+})
+console.log(sort)
+
+  let br4=arr.every((x,y,z)=>{
+    return x>3
+  })
+  console.log(br4)
+
+  let br5=arr.some((x,y,z)=>{
+    return x<3
+  })
+  console.log(br5)
+
+  console.log(arr.reverse())
+
+  let s="Hello"
+ console.log(s.split("").reverse().join(""))

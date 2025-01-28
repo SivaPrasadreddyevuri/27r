@@ -60,3 +60,21 @@ let str1 = str.charAt(0);
 // reapeating string by giving count inside paranthasis()
 // console.log(str1);
 console.log(str1)
+
+
+
+
+// let obj={name:"siva",age:26}
+
+
+// // Object.seal(obj)
+// Object.freeze(obj)
+// // obj["gender"]="male"
+// obj["age"]="43"
+// console.log(obj)
+
+
+
+
+
+
