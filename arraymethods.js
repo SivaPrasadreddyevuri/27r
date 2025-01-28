@@ -138,7 +138,7 @@ let sort=arr.sort((a,b)=>{
 console.log(sort)
 
   let br4=arr.every((x,y,z)=>{
-    return x>3qrew
+    return x>3
   })
   console.log(br4)
 
