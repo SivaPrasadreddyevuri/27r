@@ -8,5 +8,13 @@
 </head>
 <body>
     
+    <script>
+        let obj={k:"name",l:"sur"}
+        localStorage.setItem("data",JSON.stringify(obj))
+        let a=localStorage.getItem("data")
+        let b=JSON.parse(a)
+        console.log(b)
+
+    </script>
 </body>
 </html>
