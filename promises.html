@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+//  let pr=new Promise((res,rej)=>{               // cbf contain two parameters one is resolved another one is rejected6 
+//      if(true){
+//         res("Promise was Resolved")
+//      }
+//      else
+//      {
+//         rej("Problem was rejected")
+//      }
+
+//  })
+// console.log(pr) // it will give total promise object
+// pr.then((x)=>{console.log(x)}).catch((x)=>{console.log(x)})   // it gives the promise results by using [ ".then() and .catch()"]
+
+
+
+
+
+
+
+
+
+
+function html(){
+    return new Promise((res,rej)=>{
+        setTimeout(() => {
+            res("html")
+        }, 2000);
+    } )
+}
+  function css(){
+    return new Promise((res,rej)=>{
+         setTimeout(() => {
+             res("css")
+         }, 3000);
+    })
+  }
+
+  function js()
+  {
+    return new Promise((res,rej)=>{
+        setTimeout(() => {
+            res("js")
+        }, 1000);
+    })
+  }
+ console.log(html())
+ console.log(css())
+console.log(js(
+      
+))
+html().then((x)=>{console.log(x);css().then((x)=>{console.log(x);js().then((x)=>{console.log(x)})})})  // making asynchronus----> sychronus 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
