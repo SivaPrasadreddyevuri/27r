@@ -7,36 +7,28 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    
-<div id="d1">
-    <button click="increment()">Increment</button>
-    <p id="c1">0</p>
-    <button>Decrement</button>
-    <button>Reset</button>
-</div>
+    <!-- <div id="d1">
+        <button click="increment()">Increment</button>
+        <p id="c1">0</p>
+        <button>Decrement</button>
+        <button>Reset</button>
+    </div> -->
+    <button id="b" onclick="otp()">Generate OTP</button>
 
-<script>
-    let num=0
-    let count=document.getElementById("c1")
-     function increment()
-        {
-         num+=1
-         
-         count.innerHTML=console.log(num)
+    <script>
+        let h1 = document.createElement("h1")
+        let but = document.getElementById("b")
+        but.style.padding = "10px"
+        but.style.borderRadius = "10px"
+        document.body.append(h1)
+        h1.style.textAlign = "center"
+
+        function otp() {
+            let otp = Math.floor(100000 + Math.random() * 900000); // Ensures a six-digit OTP
+            h1.innerHTML = `Your OTP is ${otp}`;
+            document.body.style.backgroundColor = `#${otp}`; // Uses OTP value for background color, assuming it translates well into hex
         }
-     
-
-
-
-
-
-
-</script>
-
-
-
-
-
-
+    </script>
 </body>
+
 </html>
