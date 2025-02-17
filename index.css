@@ -3,10 +3,8 @@
 }
 .land_page_nav{
     display: flex;
-    /* position:fixed; */
     height: 10px;
-    justify-content: space-between;
-    /* gap:950px; */
+    justify-content: space-around;
 
 }
 span{
@@ -29,7 +27,7 @@ span{
     border-radius: 10px;
 }
 .grp{
-    border: 2px solid;
+    /* border: 2px solid; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,11 +36,22 @@ span{
     align-items: center;
    margin: auto;
    padding: 35px;
-   background-color:whitesmoke;
+   /* background-color:whitesmoke; */
+   /* border: none; */
 }
 .grp div{
     border: 1px solid gray;
     text-align: center;
     padding: 25px;
-
+    width:100px;
+    border-radius: 10px;
+}
+.div2{
+    text-align: center;
+}
+.div2 button{
+    padding: 9px;
+    width: 160px;
+    background-color:greenyellow;
+    border-radius: 10px;
 }
