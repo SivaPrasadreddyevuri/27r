@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button id="bt">clickme</button> -->
+    <form action="" id="frm">
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="Speciality">
+        <input type="submit">
+    </form>
+    <script>
+    //   let bt1 = document.getElementById("bt");
+    //   let userInfo = {
+    //     name: "siva",
+    //     email: "siva@gmail.com",
+    //   };
+    //   bt1.addEventListener("click", () => {
+    //     localStorage.setItem("UserDetails", JSON.stringify(userInfo));
+    //   });
+    //   let Name = JSON.parse(localStorage.getItem("UserDetails"));
+
+    //   let h1 = document.createElement("h1");
+    //   h1.innerHTML = Name.name;
+    //   let email = document.createElement("h1");
+    //   email.innerHTML = Name.email;
+    //   document.body.append(h1, email);
+ let form=document.getElementById("frm")
+ form.addEventListener("submit",(e)=>{
+      e.preventDefault()
+    let name=e.target[0].value
+    let s=e.target[1].value
+    // console.log(name,s)
+    let userDetails={name:name,special:s}
+    let arry=[]
+    arry.push(userDetails)
+    localStorage.setItem("info",JSON.stringify(arry))
+    let id=document.createElement("h1")
+    let i=document.createElement("h1")
+    let formDetails=JSON.parse(localStorage.getItem("info"))
+    id.innerHTML=info[0].name
+    document.body.append(id)
+
+ })
+
+    </script>
+  </body>
+</html>
