@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./1.js"></script>
 </head>
 <body>
-    <!-- <script>let but=document.createElement("p")
-        //  but.textContent="clickme"
-        document.body.append(but)
-        but.innerHTML="djfjhdvjhv"</script> -->
-    
+    <form action="" id="form1">
+        <input type="text">
+        <input type="email">
+        <input type="submit">
+    </form>
+    <script>
+        let form2=document.getElementById("form1")
+        form2.addEventListener("submit",(e)=>{
+          e.preventDefault()
+
+          let name=e.target[0].value
+          let email=e.target[1].value
+          let details={username:name,email:email}
+        //   localStorage.setItem("userInfo",JSON.stringify(details))
+          let b=JSON.parse(localStorage.getItem("userInfo"))||[]
+          console.log(b)
+          b.push(details)
+          localStorage.setItem("userInfo",JSON.stringify(b))
+        
+        //   let name=e.target[0].value
+        //   let email=e.target[1].value
+        //   let userDetails={username:name,email:email}
+        //   let oldData=JSON.parse(localStorage.getItem("userInfo"))||[]
+        //         console.log(oldData)
+        //         oldData.push(userDetails);
+        //   let stringifiedData=JSON.stringify(oldData)
+        //         localStorage.setItem("userInfo",stringifiedData)
+
+             
+                //   let div1=document.createElement("div")
+                //   let u=document.createElement("h1")
+                //   let r=document.createElement("p")
+                //      u.innerText=oldData.username
+                //      r.innerText=oldData.email
+                //       div1.append(u,r)
+                //       document.body.append(div1)
+                
+          
+
+        });
+    </script>
+   
 </body>
 </html>
