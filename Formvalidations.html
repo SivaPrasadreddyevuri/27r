@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formvalidations through REGEX</title>
+    <style>
+        #u_err,#p_err{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="" id="myForm">
+    <input type="text" id="username" required ><br>
+    <span id="u_err"></span><br>
+    <input type="password" id="password" required><br>
+    <span id="p_err">Password Can't Satisfies the Requirements!!</span><br>
+    <input type="submit">
+</form>
+
+
+    <script>
+        let form=document.getElementById("myForm")
+        let ip1=document.getElementById("username")
+        let ip2=document.getElementById("password")
+        let u_err=document.getElementById("u_err")
+        let p_err=document.getElementById("p_err")
+
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+        })
+
+        ip1.addEventListener("focus",()=>{
+            ip1.style.backgroundColor="orange"
+            u_err.style.display="none"
+        })
+        ip1.addEventListener("blur",()=>{
+            ip1.style.backgroundColor="red"
+            let pattern=/^[a-zA-Z][a-zA-Z0-9_]{4,14}$/
+            let op=pattern.test(ip1.value)
+             if(!op){
+               u_err.style.display="inline-block"
+               u_err.style.color="red"
+               u_err.innerHTML="User"
+            }
+            else
+            {
+               ip1.style.backgroundColor="transparent"
+            }
+
+        })
+
+       ip2.addEventListener("focus",()=>{
+            ip2.style.backgroundColor="orange"
+            p_err.style.display="none"
+       })
+       ip2.addEventListener("blur",()=>{
+        let pattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+        let op=pattern.test(ip2.value)
+
+        if(!op)
+        {
+          p_err.style.display="inline-block"
+          p_err.style.color="red"
+        }
+        else
+        {
+            ip2.style.backgroundColor="transparent"
+            p_err.style.display="none"
+
+        }
+       })
+
+    </script>
+    
+</body>
+</html>
