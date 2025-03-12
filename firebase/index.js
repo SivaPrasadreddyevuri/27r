@@ -12,16 +12,17 @@ signUp.addEventListener("submit", (e) => {
   e.preventDefault();
   let name = e.target[0].value;
   let pswrd = e.target[1].value;
-  createUserWithEmailAndPassword(auth, name, pswrd)
+  let pswrd2=e.target[2].value;
+  createUserWithEmailAndPassword(auth, name, pswrd,pswrd2)
     .then((x) => {
       alert("Sign up successfully ");
       signUp.style.display = "none";
       btn2.style.display = "none";
       signIn.style.display = "inline-block";
-      btn1.style.display = "inline-block";
-    })
+      btn1.style.display = "inline-block"
+})
     .catch((e) => {
-      alert("Provide Details Correctly");
+      alert(`${e}Something Went Wrong`);
     });
 });
 btn2.addEventListener("click",()=>{
